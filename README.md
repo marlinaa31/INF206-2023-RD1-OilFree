@@ -10,13 +10,20 @@
 
 ## Persiapan Menjalankan Program
  Masuk ke dalam folder OilFree
+ 
     cd OilFree
+    
 Install semua dependency yang dibutuhkan untuk menjalankan program
+
     composer install && npm install
 
 ## Menjalankan Web OilFree
  Jalankan servel laravel
+ 
     php artisan serve
+    
  Jalankan perintah berikut untuk menjalankan server vite
+ 
     npm run dev
+    
  Buka pada browser https//localhost:8000 untuk membuka website
