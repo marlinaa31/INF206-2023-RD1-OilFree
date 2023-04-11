@@ -18,7 +18,7 @@ Install semua dependency yang dibutuhkan untuk menjalankan program
     composer install && npm install
 
 ## Menjalankan Web OilFree
- Jalankan servel laravel
+ Jalankan server laravel
  
     php artisan serve
     
