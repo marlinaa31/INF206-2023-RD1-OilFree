@@ -17,6 +17,11 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 });*/
 
+Route::get('/registrasiuser', function () {
+    return view('registrasiuser');
+
+
 Route::get('/', function () {
     return view('home');
+
 });
