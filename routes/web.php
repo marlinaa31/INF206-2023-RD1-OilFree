@@ -23,7 +23,9 @@ Route::get('/registrasidelivery', function () {
 Route::get('/registrasiuser', function () {
     return view('registrasiuser');
 
-
+Route::get('/informasi', function () {
+    return view('informasi');
+    
 Route::get('/', function () {
     return view('home');
 
