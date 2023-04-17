@@ -19,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('registrasiuser');
 });
+Route::get('/', 'AuthController@register');
