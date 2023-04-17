@@ -23,7 +23,7 @@
        </div>  
        <div class="inputfield">
           <label>Alamat Email</label>
-          <input type="password" class="input">
+          <input type="text" class="input">
        </div>  
        <div class="inputfield">
         <label>Username</label>
