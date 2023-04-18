@@ -17,9 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-<<<<<<< HEAD
-Route::get('/', 'AuthController@register');
-=======
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -32,4 +29,3 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
->>>>>>> 6337888fc2b449d52d938a9a9384105f5276ab04
