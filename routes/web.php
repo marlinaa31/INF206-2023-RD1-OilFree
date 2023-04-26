@@ -36,5 +36,8 @@ Route::get('/pesandeliveryman', function () {
     return view('pesandeliveryman');
 })->name('pesan_deliveryman');
 
-require __DIR__.'/auth.php';
+Route::get('/Informasi', function () {
+    return view('Informasi');
+});
 
+require __DIR__.'/auth.php';
