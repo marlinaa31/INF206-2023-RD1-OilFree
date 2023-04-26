@@ -121,8 +121,8 @@
             </div>
           </div>
           <div class="d-flex justify-content-center gap-5">
-            <button type="submit" class="btn btn-dark">Pesan</button>
-            <a href="{{ route('deskripsi_deliveryman') }}" class="btn btn-link">Cancel</a>
+            <button type="submit" class="btn btn-dark">Selanjutnya</button>
+            <a href="{{ route('deskripsi_deliveryman') }}" class="btn btn-outline-primary">Cancel</button>
           </div>
         </form>
         </div>
