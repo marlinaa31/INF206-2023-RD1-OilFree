@@ -42,7 +42,7 @@
     <a href="/order" class="relative w-3/4 h-56 block w-sm bg-white border border-gray-200 rounded-lg drop-shadow-2xl hover:bg-gray-100 dark:bg-white dark:border-gray-800 dark:hover:bg-gray-800">
       <h5 class=" text-center mt-6 ml-6 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Oil free </h5>
       <p class="text-center mt-6 ml-6 text-xl font-bold tracking-tight text-gray-900 dark:text-black">oil free </p>
-      <p class="text-center mt-6 ml-6 text-l font-bold tracking-tight text-gray-900 dark:text-black">Di CLEAN DE KOST anda dapat menukar sampah anorganik anda dengan pemotongan biaya jasa pembersihan kos anda</p>
+      <p class="text-center mt-6 ml-6 text-l font-bold tracking-tight text-gray-900 dark:text-black">oil free anda dapat menukar minyak jelanta dengan point yg mana point tersebut dapat ditukar dengan pulsa</p>
       <p class="text-center mt-6 ml-6 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Klik Disini Untuk Memesan</p> 
     </a>
    
