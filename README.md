@@ -11,7 +11,7 @@
 ## Persiapan Menjalankan Program
  Masuk ke dalam folder OilFree
  
-    cd OilFree
+    cd INF206-2023-RD1-OilFree
     
 Install semua dependency yang dibutuhkan untuk menjalankan program
 

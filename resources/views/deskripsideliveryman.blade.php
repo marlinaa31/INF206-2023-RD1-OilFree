@@ -29,7 +29,7 @@
                         Konsumen dapat memilih waktu dan lokasi pengambilan minyak jelantah, serta menentukan jumlah minyak jelantah yang akan diambil.</p>
                     <p class="card-text">Setelah pemesanan terkonfirmasi, deliveryman akan datang ke lokasi yang ditentukan untuk menjemput minyak jelantah tersebut. Setelah itu, minyak jelantah akan diangkut ke tempat pengolahan atau daur ulang untuk diolah kembali menjadi produk yang dapat digunakan kembali.</p>
                     <p class="card-text"><small class="text-body-secondary"></small></p>
-                    <a href="{{ route('pesan_deliveryman') }}" class="btn btn-dark">Pesan Sekarang</a>
+                    <a href="{{ route('pesan_deliveryman') }}" class="btn btn-dark">Jemput Sekarang</a>
                 </div>
             </div>
             <div class="col-md-6">
@@ -45,6 +45,4 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 </body>
-
-
 </html>

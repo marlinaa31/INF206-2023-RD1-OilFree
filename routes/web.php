@@ -18,10 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/deskripsideliveryman', function () {
-    return view('deskripsideliveryman');
-});
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -32,10 +28,16 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/deskripsideliveryman', function () {
+    return view('deskripsideliveryman');
+})->name('deskripsi_deliveryman');
+
 Route::get('/pesandeliveryman', function () {
     return view('pesandeliveryman');
 })->name('pesan_deliveryman');
 
+Route::get('/Informasi', function () {
+    return view('Informasi');
+});
 
 require __DIR__.'/auth.php';
-
