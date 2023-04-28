@@ -40,4 +40,20 @@ Route::get('/Informasi', function () {
     return view('Informasi');
 });
 
+Route::get('/dashboarddeliveryman', function () {
+    return view('dashboarddeliveryman');
+});
+
+Route::get('/profildelivery', function () {
+    return view('profildelivery');
+});
+
+Route::get('/tampilandeliveryman', function () {
+    return view('tampilandeliveryman');
+});
+
+Route::get('/datadeliveryman', function () {
+    return view('datadeliveryman');
+})->name('data_deliveryman');
+
 require __DIR__.'/auth.php';
