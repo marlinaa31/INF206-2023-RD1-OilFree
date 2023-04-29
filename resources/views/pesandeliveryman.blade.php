@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Delivery</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css" rel="stylesheet">
+
+    <!-- file CSS SweetAlert -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   </head>
 
   <body class="bg-warning">
@@ -108,8 +107,7 @@
           </div>
           <div class="row justify-content-center mb-3">
             <label for="keterangan" class="col-2 col-form-label"
-              >Keterangan</label
-            >
+              >Keterangan</label>
             <div class="col-4">
               <textarea
                 class="form-control"
@@ -121,11 +119,24 @@
             </div>
           </div>
           <div class="d-flex justify-content-center gap-5">
-            <button type="submit" class="btn btn-dark">Selanjutnya</button>
-            <a href="{{ route('deskripsi_deliveryman') }}" class="btn btn-outline-primary">Cancel</button>
+          <button type="button" class="btn btn-primary" id="pesanButton">Selesai</button>
+          <a href="{{ route('deskripsi_deliveryman') }}" class="btn btn-outline-primary">Batal</button>
           </div>
         </form>
         </div>
     </div>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <!-- file JavaScript SweetAlert -->
+      <script>
+        const pesanButton = document.querySelector('#pesanButton');
+        pesanButton.addEventListener('click', function() {
+          Swal.fire({
+            title: 'Tunggu sebentar',
+            text: 'Kami akan segera menemukan deliveryman untuk anda!',
+            icon: 'info',   
+          });
+        });
+      </script>
+  </body>
 </html>
