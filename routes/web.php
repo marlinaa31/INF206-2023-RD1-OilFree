@@ -40,6 +40,10 @@ Route::get('/Informasi', function () {
     return view('Informasi');
 });
 
+Route::get('/alamatuser', function () {
+    return view('alamatuser');
+});
+
 Route::get('/Dash', function () {
     return view('dashboard');
 });
