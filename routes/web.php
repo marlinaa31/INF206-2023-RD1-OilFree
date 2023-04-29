@@ -40,4 +40,8 @@ Route::get('/Informasi', function () {
     return view('Informasi');
 });
 
+Route::get('/alamatuser', function () {
+    return view('alamatuser');
+});
+
 require __DIR__.'/auth.php';
