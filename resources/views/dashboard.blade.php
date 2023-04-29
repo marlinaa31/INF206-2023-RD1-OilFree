@@ -1,4 +1,24 @@
-<x-app-layout>
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Oil Free</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+    @vite('resources/css/app.css')
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+    <!-- Styles -->
+
+</head>
+<body>
+@include('partials.Sidebar')
+
 <div class="relative overflow-hidden bg-[url('/Images/pexels-huseyn-kamaladdin-667838.jpg')] bg-center bg-cover">
   <div class="flex flex-col justify-center min-h-screen backdrop-blur-sm">
   <!--carousel start-->
@@ -7,11 +27,11 @@
   <div class="relative  h-56 overflow-hidden rounded-lg md:h-96">
        <!-- Item 1 -->
       <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="{{ url('Images\Anorganik.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          <img src="{{ url('images\seorang-pekerja-mengumpulkan-minyak-jelantah-yang-diperoleh-dari-sejumlah-_170919172059-726.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
       </div>
       <!-- Item 2 -->
       <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="{{ url('Images\Organik.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          <img src="{{ url('images\Jelantah-7.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
       </div>
       
   </div>
@@ -42,12 +62,13 @@
     <a href="/order" class="relative w-3/4 h-56 block w-sm bg-white border border-gray-200 rounded-lg drop-shadow-2xl hover:bg-gray-100 dark:bg-white dark:border-gray-800 dark:hover:bg-gray-800">
       <h5 class=" text-center mt-6 ml-6 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Oil free </h5>
       <p class="text-center mt-6 ml-6 text-xl font-bold tracking-tight text-gray-900 dark:text-black">oil free </p>
-      <p class="text-center mt-6 ml-6 text-l font-bold tracking-tight text-gray-900 dark:text-black">Di CLEAN DE KOST anda dapat menukar sampah anorganik anda dengan pemotongan biaya jasa pembersihan kos anda</p>
+      <p class="text-center mt-6 ml-6 text-l font-bold tracking-tight text-gray-900 dark:text-black">oil free anda dapat menukar minyak jelanta dengan point yg mana point tersebut dapat ditukar dengan pulsa</p>
       <p class="text-center mt-6 ml-6 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Klik Disini Untuk Memesan</p> 
     </a>
    
   </div>
   <!--card end-->
+  </body>
 
   <!--Footer container-->
 <footer class="bg-sky-600 mt-2 text-center text-white">
@@ -110,10 +131,7 @@
     style="background-color: rgba(0, 0, 0, 0.2)">
     © 2023 Copyright:
     <a class="text-whitehite" href="https://tailwind-elements.com/"
-      >Clean De kost</a
+      >OilFree</a
     >
   </div>
 </footer>
-
-
-</x-app-layout>
