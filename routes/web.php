@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('dashboardd');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
@@ -38,6 +38,10 @@ Route::get('/pesandeliveryman', function () {
 
 Route::get('/Informasi', function () {
     return view('Informasi');
+});
+
+Route::get('/Dash', function () {
+    return view('dashboard');
 });
 
 require __DIR__.'/auth.php';
