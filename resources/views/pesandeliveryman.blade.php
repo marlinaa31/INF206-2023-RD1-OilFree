@@ -14,7 +14,7 @@
   <body class="bg-warning">
     <nav class="navbar bg-body-tertiary">
       <div class="container-fluid">
-        <button type="button" class="btn btn-Kembali">Kembali</button>
+        <a href="{{ route('deskripsi_deliveryman') }}" class="btn btn-Kembali">Kembali</a>
         <a class="navbar-brand" href="#">Delivery Man</a>
         <p align="center"></p>
       </div>
@@ -120,7 +120,7 @@
           </div>
           <div class="d-flex justify-content-center gap-5">
           <button type="button" class="btn btn-primary" id="pesanButton">Selesai</button>
-          <a href="{{ route('deskripsi_deliveryman') }}" class="btn btn-outline-primary">Batal</button>
+          <a href="{{ route('deskripsi_deliveryman') }}" class="btn btn-outline-primary">Batal</a>
           </div>
         </form>
         </div>
