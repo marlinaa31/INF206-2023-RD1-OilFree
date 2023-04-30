@@ -119,24 +119,30 @@
             </div>
           </div>
           <div class="d-flex justify-content-center gap-5">
-          <button type="button" class="btn btn-primary" id="pesanButton">Selesai</button>
+          <button type="button" class="btn btn-primary" id="pesanButton">Pesan</button>
           <a href="{{ route('deskripsi_deliveryman') }}" class="btn btn-outline-primary">Batal</a>
           </div>
         </form>
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
     <!-- file JavaScript SweetAlert -->
-      <script>
-        const pesanButton = document.querySelector('#pesanButton');
-        pesanButton.addEventListener('click', function() {
-          Swal.fire({
+    <script>
+    const pesanButton = document.querySelector('#pesanButton');
+    pesanButton.addEventListener('click', function(e) {
+       e.preventDefault(); // membatalkan aksi default tombol
+        Swal.fire({
             title: 'Tunggu sebentar',
-            text: 'Kami akan segera menemukan deliveryman untuk anda!',
-            icon: 'info',   
+            text: 'Kami akan segera menemukan deliveryman untuk anda:)',
+            icon: 'info',
+        }).then((result)=> {
+            if (result.isConfirmed) {
+                window.location.href = "{{ route('data_deliveryman') }}"; // mengganti route dan halaman tujuan
+            }
           });
-        });
-      </script>
+      });
+    </script>
   </body>
 </html>

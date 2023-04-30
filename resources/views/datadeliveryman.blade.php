@@ -14,7 +14,7 @@
 <body class="bg-warning">
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-            <button type="button" class="btn btn-Kembali">Kembali</button>
+            <a href="{{ route('pesan_deliveryman') }}" class="btn btn-Kembali">Kembali</a>
             <a class="navbar-brand" href="#">Delivery Man</a>
             <p align="center"></p>
         </div>
@@ -61,8 +61,8 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-center gap-5 mt-4 mb-4">
-                                    <button type="button" class="btn btn-primary" id="pesanButton">Selesai</button>
-                                    <button type="button" class="btn btn-outline-primary">Batal</button>
+                                    <button type="button" class="btn btn-primary" id="selesaiButton">Selesai</button>
+                                    <a href="{{ route('pesan_deliveryman') }}" class="btn btn-outline-primary">Batal</a>
                                 </div>
                             </div>
                         </div>
@@ -77,13 +77,18 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <!-- file JavaScript SweetAlert -->
     <script>
-    const pesanButton = document.querySelector('#pesanButton');
-    pesanButton.addEventListener('click', function() {
+    const selesaiButton = document.querySelector('#selesaiButton');
+    selesaiButton.addEventListener('click', function(e) {
+       e.preventDefault(); // membatalkan aksi default tombol
         Swal.fire({
             title: 'Terimakasih',
             text: 'Deliveryman on the way!',
             icon: 'success',
-        });
-    });
+        }).then((result)=> {
+            if (result.isConfirmed) {
+                window.location.href = "{{ route('deskripsi_deliveryman') }}"; // mengganti route dan halaman tujuan
+            }
+          });
+      });
     </script>
 </body>

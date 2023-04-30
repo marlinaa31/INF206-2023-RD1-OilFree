@@ -18,8 +18,16 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('login');
+
+Route::get('/register', function () {
+    return view('auth.register');
+})->name('register');
+
 Route::get('/dashboard', function () {
-    return view('dashboardd');
+    return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
@@ -42,26 +50,34 @@ Route::get('/Informasi', function () {
 
 Route::get('/alamatuser', function () {
     return view('alamatuser');
-});
-
-Route::get('/Dash', function () {
-    return view('dashboard');
-});
+})->name('alamat_user');
 
 Route::get('/dashboarddeliveryman', function () {
     return view('dashboarddeliveryman');
-});
+})->name('dashboard_deliveryman');
+
+Route::get('/masuk_pesanan', function () {
+    return view('masuk_pesanan');
+})->name('masuk_pesanan');
 
 Route::get('/profildelivery', function () {
     return view('profildelivery');
-});
+})->name('profil_delivery');
 
-Route::get('/tampilandeliveryman', function () {
-    return view('tampilandeliveryman');
-});
+Route::get('/beripoint', function () {
+    return view('beripoint');
+})->name('beri_point');
 
 Route::get('/datadeliveryman', function () {
     return view('datadeliveryman');
 })->name('data_deliveryman');
+
+Route::get('/point', function () {
+    return view('point');
+})->name('point');
+
+Route::get('/tukarpulsa', function () {
+    return view('tukarpulsa');
+})->name('tukar-pulsa');
 
 require __DIR__.'/auth.php';

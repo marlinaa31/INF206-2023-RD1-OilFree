@@ -1,12 +1,13 @@
 :root {
-    --main-bg-color: #009d63;
-    --main-text-color: #009d63;
+    --main-bg-color: #fbb117;
+    --main-text-color: #fbb117;
+    --text-color: #000000;
     --second-text-color: #bbbec5;
-    --second-bg-color: #c1efde;
+    --second-bg-color: #fbb117;
   }
   
   .primary-text {
-    color: var(--main-text-color);
+    color: var(--text-color);
   }
   
   .second-text {
@@ -29,11 +30,11 @@
     overflow-x: hidden;
     background-image: linear-gradient(
       to right,
-      #baf3d7,
-      #c2f5de,
-      #cbf7e4,
-      #d4f8ea,
-      #ddfaef
+      #fbb117,
+      #fbb117,
+      #fbb117,
+      #fbb117,
+      #fbb117
     );
   }
   
