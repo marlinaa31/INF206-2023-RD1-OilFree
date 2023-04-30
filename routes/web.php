@@ -38,7 +38,7 @@ Route::get('/pesandeliveryman', function () {
 
 Route::get('/Informasi', function () {
     return view('Informasi');
-});
+})->name('informasi');
 
 Route::get('/alamatuser', function () {
     return view('alamatuser');
