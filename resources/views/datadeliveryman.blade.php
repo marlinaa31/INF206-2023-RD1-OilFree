@@ -42,7 +42,7 @@
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <div class="form-floating">
-                                        <input type="number" class="form-control" id="No Hp" placeholder="No Hp" />
+                                        <input type="text" class="form-control" id="No Hp" placeholder="No Hp" />
                                         <label for="floatingNoHp">No Hp</label>
                                     </div>
                                 </div>
