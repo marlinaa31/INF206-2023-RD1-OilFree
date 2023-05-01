@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -291,6 +290,4 @@
     <script src="{{ url('main.js')}}"></script>
 
 </body>
-
->>>>>>> 617094bc6cd168488a27061aff46b3d78f69b72b
 </html>
