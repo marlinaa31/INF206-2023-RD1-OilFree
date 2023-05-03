@@ -74,6 +74,56 @@
             </div>
         </div>
     </div>
+    <!-- card 3 -->
+    <div class="d-flex justify-content-center mb-2">
+        <div class="card mb-3" style=" max-width: 1350px;">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1630487378070-ec90568485b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1098&q=80"
+                        class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Bahan bakar lampu</h5>
+                        <p class="card-text">
+
+                            Pembuatan bahan bakar lampu dari minyak jelantah melibatkan proses pengolahan minyak
+                            jelantah menjadi bahan bakar yang dapat digunakan sebagai pengganti minyak tanah pada lampu.
+                            Prosesnya meliputi pemisahan minyak dari limbah, pengolahan dengan bantuan bahan kimia, dan
+                            penyulingan hingga menjadi bahan bakar yang dapat digunakan pada lampu. Bahan bakar lampu
+                            yang dihasilkan dari minyak jelantah dapat membantu mengurangi ketergantungan pada bahan
+                            bakar fosil dan membantu mengurangi limbah yang mencemari lingkungan. Namun, sebelum
+                            digunakan, bahan bakar lampu dari minyak jelantah harus diuji dan dijamin aman bagi
+                            kesehatan manusia dan lingkungan.</p>
+                        <p class="card-text"><small class="text-body-secondary"></small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- card 4 -->
+    <div class="d-flex justify-content-center mt-4 mb-2">
+        <div class="card mb-3" style=" max-width: 1350px;">
+            <div class="row g-0">
+    </section>
+
+    <!-- jquery  -->
+    <script src="{{ url('assets/js/jquery-3.5.1.min.js')}}"></script>
+    <!-- bootstrap -->
+    <script src="{{ url('assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url('assets/js/popper.min.js') }}"></script>
+
+    <!-- fontawesome  -->
+    <script src="{{ url('assets/js/font-awesome.min.js')}}"></script>
+
+    <!-- swiper slider  -->
+    <script src="{{ url ('assets/js/swiper-bundle.min.js') }}"></script>
+
+    <!-- mixitup -- filter  -->
+    <script src="{{ url('assets/js/jquery.mixitup.min.js') }}"></script>
+
+
+    </div>
     </section>
 
     <!-- jquery  -->
