@@ -1,26 +1,25 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.layoutUser')
+
+@section('content')
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Informasi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- for icons  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="{{ url('assets/css/bootstrap.min.css') }}">
+    <!-- for swiper slider  -->
+    <link rel="stylesheet" href="{{ url('assets/css/swiper-bundle.min.css') }}">
+
+    <!-- fancy box  -->
+    <link rel="stylesheet" href="{{ url('assets/css/jquery.fancybox.min.css') }}">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="{{ url('css/style.css') }}">
 </head>
-
-<body class="bg-warning">
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-
-            <button type="button" class="btn btn-Kembali">Kembali</button>
-            <a class="navbar-brand mx-auto" href="#">Informasi</a>
-        </div>
-    </nav>
     <!-- <p class="align-items-center"></p> -->
     <!--card 1-->
-    <div class="d-flex justify-content-center mt-2 mb-2">
-        <div class="card mb-3" style=" max-width: 1200px;">
+    <section class="two-col-sec section">
+    <div class="d-flex justify-content-center mt-3 mb-2">
+        <div class="card mb-3" style=" max-width: 1350px;">
             <div class="row g-0">
                 <div class="col-md-6">
                     <img src="https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
@@ -42,14 +41,19 @@
                             lingkungan dan membantu mengurangi limbah minyak jelantah yang dapat mencemari lingkungan
                             jika dibuang begitu saja.</p>
                         <p class="card-text"><small class="text-body-secondary"></small></p>
+                        
                     </div>
+                    
                 </div>
+                
             </div>
+            
         </div>
+        
     </div>
     <!-- card 2 -->
-    <div class="d-flex justify-content-center mb-2">
-        <div class="card mb-3" style=" max-width: 1200px;">
+    <div class="d-flex justify-content-center mt-4 mb-5">
+        <div class="card mb-5" style=" max-width: 1350px;">
             <div class="row g-0">
 
                 <div class="col-md-6">
@@ -67,17 +71,22 @@
                             dan lingkungan.</p>
                         <p class="card-text"><small class="text-body-secondary"></small></p>
                     </div>
+                    
                 </div>
                 <div class="col-md-6">
                     <img src="https://images.unsplash.com/photo-1609784969374-b53a14d91338?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                         class="img-fluid rounded-start " alt="...">
+                        
                 </div>
+                
             </div>
+            
         </div>
+        
     </div>
     <!-- card 3 -->
     <div class="d-flex justify-content-center mb-2">
-        <div class="card mb-3" style=" max-width: 1200px;">
+        <div class="card mb-3" style=" max-width: 1350px;">
             <div class="row g-0">
                 <div class="col-md-6">
                     <img src="https://images.unsplash.com/photo-1630487378070-ec90568485b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1098&q=80"
@@ -97,49 +106,13 @@
                             digunakan, bahan bakar lampu dari minyak jelantah harus diuji dan dijamin aman bagi
                             kesehatan manusia dan lingkungan.</p>
                         <p class="card-text"><small class="text-body-secondary"></small></p>
+                        
                     </div>
+                    
                 </div>
+                
             </div>
+            
         </div>
+        
     </div>
-    <!-- card 4 -->
-    <div class="d-flex justify-content-center mb-2">
-        <div class="card mb-3" style=" max-width: 1200px;">
-            <div class="row g-0">
-
-                <div class="col-md-6">
-                    <div class="card-body">
-                        <h5 class="card-title">Biodiesel</h5>
-                        <p class="card-text">
-
-                            Biodiesel adalah bahan bakar yang ramah lingkungan yang diproduksi dari sumber daya nabati
-                            atau hewan, seperti minyak jelantah. Minyak jelantah dapat diambil dari minyak bekas yang
-                            digunakan untuk menggoreng makanan, yang kemudian dapat diolah menjadi biodiesel melalui
-                            proses transesterifikasi.
-
-                            Proses transesterifikasi melibatkan reaksi antara minyak jelantah dengan alkohol dan
-                            katalis, yang menghasilkan ester biodiesel dan gliserol. Setelah pemisahan ester biodiesel
-                            dan gliserol, biodiesel diuji untuk memastikan bahwa ia memenuhi standar kualitas yang
-                            ditetapkan, seperti kepadatan, viskositas, titik nyala, dan nilai kalor.
-
-                            Biodiesel yang dihasilkan dari minyak jelantah memiliki keunggulan dalam hal pengurangan
-                            emisi gas rumah kaca, karena dapat mengurangi emisi karbon dioksida hingga 78% dibandingkan
-                            dengan bahan bakar diesel konvensional. Selain itu, penggunaan biodiesel dari minyak
-                            jelantah juga dapat membantu mengurangi limbah yang mencemari lingkungan, karena dapat
-                            mengurangi jumlah minyak jelantah yang dibuang secara tidak benar.</p>
-                        <p class="card-text"><small class="text-body-secondary"></small></p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://media.istockphoto.com/id/1359509787/id/foto/percobaan-biodiesel-dari-bahan-baku-alami-di-laboratorium.jpg?s=612x612&w=0&k=20&c=RuoR1B8B-H0uNF6BI8ovTTKqf_PJJGVQSWUQYGuWKRw="
-                        class="img-fluid rounded-start " alt="...">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
-    </script>
-</body>
-</html>
