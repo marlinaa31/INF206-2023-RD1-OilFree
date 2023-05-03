@@ -380,8 +380,5 @@
     <!-- custom js  -->
     <script src="{{ url('main.js')}}"></script>
 
-<<<<<<< HEAD
     @endsection
-=======
-    @endsection
->>>>>>> 9c14a614b2cac464db100b10f18d2f8acd95df90
+
