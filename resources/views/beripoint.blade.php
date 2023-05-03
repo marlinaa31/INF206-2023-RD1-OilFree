@@ -19,6 +19,14 @@
         <p align="center"></p>
       </div>
     </nav>
+
+    <div class="wrapper">
+        
+  <!-- Sidebar -->
+    @include('layouts.layoutdeliveryman')
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Content -->
 	<div class="container">
 	<div class="d-flex justify-content-center align-items-center mt-5 mb-2">
 	<div class="p-5 bg-white shadow-sm">
