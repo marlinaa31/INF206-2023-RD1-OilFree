@@ -25,8 +25,23 @@
 
     @section('content')
     <div class="relative overflow-x-auto shadow-md sm:rounded-lg p-4 text-gray-700 border border-gray-200 bg-gray-50">
+=======
+    <!-- for icons  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="{{ url('assets/css/bootstrap.min.css') }}">
+    <!-- for swiper slider  -->
+    <link rel="stylesheet" href="{{ url('assets/css/swiper-bundle.min.css') }}">
+
+    <!-- fancy box  -->
+    <link rel="stylesheet" href="{{ url('assets/css/jquery.fancybox.min.css') }}">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="{{ url('css/style.css') }}">
+</head>
+<section class="two-col-sec section">
+>>>>>>> ba1b70d7f3e90145c4da27160ab7dc1c95564c6a
     <div class="container">
-      <div class="mt-3 mb-2">
+      <div class="mt-2 mb-2">
         <form>
           <div class="row justify-content-center mt-5 mb-3">
             <label for="validationServer01" class="col-2 col-form-label">
@@ -171,6 +186,7 @@
         </form>
         </div>
     </div>
+</section>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
@@ -190,7 +206,31 @@
           });
       });
     </script>
-  </body>
-</html>
+        <!-- jquery  -->
+        <script src="{{ url('assets/js/jquery-3.5.1.min.js')}}"></script>
+    <!-- bootstrap -->
+    <script src="{{ url('assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url('assets/js/popper.min.js') }}"></script>
+
+    <!-- fontawesome  -->
+    <script src="{{ url('assets/js/font-awesome.min.js')}}"></script>
+
+    <!-- swiper slider  -->
+    <script src="{{ url ('assets/js/swiper-bundle.min.js') }}"></script>
+
+    <!-- mixitup -- filter  -->
+    <script src="{{ url('assets/js/jquery.mixitup.min.js') }}"></script>
+
+    <!-- fancy box  -->
+    <script src="{{ url('assets/js/jquery.fancybox.min.js') }}"></script>
+
+    <!-- parallax  -->
+    <script src="{{ url ('assets/js/parallax.min.js') }}"></script>
+
+    <!-- gsap  -->
+    <script src="{{ url ('assets/js/gsap.min.js')}}"></script>
+
+    <!-- custom js  -->
+    <script src="{{ url('main.js')}}"></script>
 
 @endsection
