@@ -105,24 +105,36 @@
     <div class="d-flex justify-content-center mt-4 mb-2">
         <div class="card mb-3" style=" max-width: 1350px;">
             <div class="row g-0">
-    </section>
 
-    <!-- jquery  -->
-    <script src="{{ url('assets/js/jquery-3.5.1.min.js')}}"></script>
-    <!-- bootstrap -->
-    <script src="{{ url('assets/js/bootstrap.min.js') }}"></script>
-    <script src="{{ url('assets/js/popper.min.js') }}"></script>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Biodiesel</h5>
+                        <p class="card-text">
 
-    <!-- fontawesome  -->
-    <script src="{{ url('assets/js/font-awesome.min.js')}}"></script>
+                            Biodiesel adalah bahan bakar yang ramah lingkungan yang diproduksi dari sumber daya nabati
+                            atau hewan, seperti minyak jelantah. Minyak jelantah dapat diambil dari minyak bekas yang
+                            digunakan untuk menggoreng makanan, yang kemudian dapat diolah menjadi biodiesel melalui
+                            proses transesterifikasi.
 
-    <!-- swiper slider  -->
-    <script src="{{ url ('assets/js/swiper-bundle.min.js') }}"></script>
+                            Proses transesterifikasi melibatkan reaksi antara minyak jelantah dengan alkohol dan
+                            katalis, yang menghasilkan ester biodiesel dan gliserol. Setelah pemisahan ester biodiesel
+                            dan gliserol, biodiesel diuji untuk memastikan bahwa ia memenuhi standar kualitas yang
+                            ditetapkan, seperti kepadatan, viskositas, titik nyala, dan nilai kalor.
 
-    <!-- mixitup -- filter  -->
-    <script src="{{ url('assets/js/jquery.mixitup.min.js') }}"></script>
-
-
+                            Biodiesel yang dihasilkan dari minyak jelantah memiliki keunggulan dalam hal pengurangan
+                            emisi gas rumah kaca, karena dapat mengurangi emisi karbon dioksida hingga 78% dibandingkan
+                            dengan bahan bakar diesel konvensional. Selain itu, penggunaan biodiesel dari minyak
+                            jelantah juga dapat membantu mengurangi limbah yang mencemari lingkungan, karena dapat
+                            mengurangi jumlah minyak jelantah yang dibuang secara tidak benar.</p>
+                        <p class="card-text"><small class="text-body-secondary"></small></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://media.istockphoto.com/id/1359509787/id/foto/percobaan-biodiesel-dari-bahan-baku-alami-di-laboratorium.jpg?s=612x612&w=0&k=20&c=RuoR1B8B-H0uNF6BI8ovTTKqf_PJJGVQSWUQYGuWKRw="
+                        class="img-fluid rounded-start " alt="...">
+                </div>
+            </div>
+        </div>
     </div>
     </section>
 
