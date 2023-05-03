@@ -1,5 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.layoutUser')
+
+@section('content')
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,103 +21,147 @@
         <p align="center"></p>
       </div>
     </nav>
+    @endsection
 
+    @section('content')
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg p-4 text-gray-700 border border-gray-200 bg-gray-50">
     <div class="container">
       <div class="mt-3 mb-2">
         <form>
           <div class="row justify-content-center mt-5 mb-3">
-            <label for="inputnama" class="col-2 col-form-label">Nama</label>
+            <label for="validationServer01" class="col-2 col-form-label">
+              Nama
+            </label>
             <div class="col-4">
               <input
                 type="text"
-                class="form-control"
-                id="nama"
+                class="form-control is-valid"
+                id="validationServer01"
                 placeholder="Masukkan Nama"
                 name="nama"
-              />
+                required>
+            <div class="valid-feedback">
+              Cek kembali Nama
             </div>
           </div>
           <div class="row justify-content-center mb-3">
-            <label for="inputnohp" class="col-2 col-form-label">No Hp</label>
+            <label for="validationServerNama" class="col-2 col-form-label">
+              No Hp
+            </label>
             <div class="col-4">
               <input
                 type="text"
-                class="form-control"
-                id="nohp"
+                class="form-control is-valid"
+                id="validationServerNama"
                 placeholder="Masukkan No Hp"
                 name="nohp"
-              />
+                required>
+            <div class="valid-feedback">
+              Cek kembali nomor Hp
             </div>
           </div>
           <div class="row justify-content-center mb-3">
-            <label for="jumlah" class="col-2 col-form-label"
-              >Berat Minyak (liter)</label>
+            <label for="ValidationServerJumlah" class="col-2 col-form-label">
+              Berat Minyak (liter)
+            </label>
             <div class="col-4">
               <input
                 type="number"
-                class="form-control"
-                id="jumlah"
+                class="form-control is-valid"
+                id="ValidationServerJumlah"
                 placeholder="Masukkan Berat Minyak"
                 name="jumlah"
-              />
-              <div class="form-text">Contoh: 5</div>
+                required>
+            <div class="valid-feedback">
+              Cek kembali Berat Minyak
+            </div>
+              <div class="form-text">
+                Contoh: 10
+              </div>
             </div>
           </div>
           <div class="row justify-content-center mb-3">
-            <label for="formFileMultiple" class="col-2 col-form-label"
-              >Foto Minyak</label
-            >
+            <label for="formFileMultiple" class="col-2 col-form-label">
+              Foto Minyak
+              </label>
             <div class="col-4">
               <input
-                class="form-control"
+                class="form-control is-valid"
                 type="file"
                 id="formFileMultiple"
                 multiple
-              />
-            </div></div>
+              required>
+              <div class="valid-feedback">
+                Foto sudah tersimpan
+            </div>
+            </div>
           <div class="row justify-content-center mb-3">
-            <label for="alamat" class="col-2 col-form-label">Alamat</label>
+            <label for="alamat" class="col-2 col-form-label">
+              Alamat
+            </label>
             <div class="col-4">
               <input
                 type="text"
-                class="form-control"
+                class="form-control is-valid"
                 id="alamat"
                 placeholder="Masukkan Alamat"
                 name="alamat"
-              />
+              required>
+              <div class="valid-feedback">
+                Cek kembali alamat
+              </div>
               <div class="form-text">
                 Contoh: Jalan Raya No. 123, Banda Aceh
               </div>
             </div>
           </div>
           <div class="row justify-content-center mb-3">
-            <label for="tanggal" class="col-2 col-form-label">Tanggal</label>
+            <label for="tanggal" class="col-2 col-form-label">
+              Tanggal
+            </label>
             <div class="col-4">
               <input
                 type="date"
-                class="form-control"
+                class="form-control is-valid"
                 id="tanggal"
                 name="tanggal"
-              />
+              required>
+              <div class="valid-feedback">
+                Cek kembali tanggal
+              </div>
             </div>
           </div>
           <div class="row justify-content-center mb-3">
-            <label for="waktu" class="col-2 col-form-label">Waktu</label>
+            <label for="waktu" class="col-2 col-form-label">
+              Waktu
+            </label>
             <div class="col-4">
-              <input type="time" class="form-control" id="waktu" name="waktu" />
+              <input 
+                type="time" 
+                class="form-control is-valid" 
+                id="waktu" 
+                name="waktu" 
+                required>
+                <div class="valid-feedback">
+                  Cek kembali waktu
+              </div>
             </div>
           </div>
           <div class="row justify-content-center mb-3">
-            <label for="keterangan" class="col-2 col-form-label"
-              >Keterangan</label>
+            <label for="keterangan" class="col-2 col-form-label">
+              Keterangan
+            </label>
             <div class="col-4">
               <textarea
-                class="form-control"
+                class="form-control is-valid"
                 id="keterangan"
                 placeholder="Masukkan Keterangan"
                 name="keterangan"
                 rows="3"
               ></textarea>
+              <div class="valid-feedback">
+                  Keterangan adalah opsional
+              </div>
             </div>
           </div>
           <div class="d-flex justify-content-center gap-5">
@@ -146,3 +192,5 @@
     </script>
   </body>
 </html>
+
+@endsection
