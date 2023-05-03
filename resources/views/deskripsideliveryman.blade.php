@@ -10,7 +10,7 @@
 <body class="bg-warning">
 <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
-        <button type="button" class="btn btn-Kembali">Kembali</button>
+        <a href="{{ route('dashboard') }}" class="btn btn-Kembali">Kembali</a>
         <a class="navbar-brand" href="#">Delivery Man</a>
         <p align="center">
         </p>

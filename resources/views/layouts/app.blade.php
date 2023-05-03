@@ -46,7 +46,7 @@
                     <img class ="h-auto mx-auto w-5/12" src="{{asset('images/logo.png')}}" alt="">
                 </div>
                 <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Daftar Akun</h3>
-                <form class="space-y-6" method="POST" action="#">
+                <form class="space-y-6" method="POST" action="{{ route('register') }}">
                 @csrf
                 <div class="sm:grid-cols-2 gap-4">
                     <div class="sm:mr-5">
@@ -95,7 +95,7 @@
                     <img class ="h-auto mx-auto w-5/12" src="{{asset('images/logo.png')}}" alt="">
                 </div>
                 <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Masuk Akun</h3>
-                <form class="space-y-6" method="POST" action="#">
+                <form class="space-y-6" method="POST" action="{{ route('login') }}">
                 @csrf
                 <div>
                     <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Alamat Email</label>
@@ -112,7 +112,6 @@
                             </div>
                             <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Ingat Akun</label>
                         </div>
-                        <a href="#" class="text-sm text-blue-700 hover:underline dark:text-blue-500">Lupa kata sandi?</a>
                     </div>
                     <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Masuk</button>
                     <div class="text-sm font-medium text-gray-500 dark:text-gray-300">

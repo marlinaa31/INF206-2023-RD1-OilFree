@@ -12,14 +12,24 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
-                    </x-nav-link>
+                    <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white-600  left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                        <li class="mx-8 my-8 ">
+                          <a href="/dashboard" class="text-lg hover:text-[#DCDCDC] duration-500">Beranda</a>
+                        </li>
+                        <li class="mx-8 my-8 ">
+                          <a href="{{ route('informasi') }}" class="text-lg hover:text-[#DCDCDC] duration-500">Informasi</a>
+                        </li>
+                        <li class="mx-8 my-8 ">
+                          <a href="{{ route('deskripsi_deliveryman') }}" class="text-lg hover:text-[#DCDCDC] duration-500">Delivery Man</a>
+                        </li>
+                        <li class="mx-8 my-8 ">
+                          <a href="{{ route('point') }}" class="text-lg hover:text-[#DCDCDC] duration-500">Redeem Point</a>
+                        </li>
                 </div>
             </div>
 
             <!-- Settings Dropdown -->
-            <div class="hidden sm:flex sm:items-center sm:ml-6">
+            <div class="hidden sm:flex sm:items-center sm:ml-5">
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
                         <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">

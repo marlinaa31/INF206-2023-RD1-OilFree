@@ -1,28 +1,8 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Oil Free</title>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-    @vite('resources/css/app.css')
-    <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
-    <!-- Styles -->
-
-</head>
-<body>
-@include('partials.Sidebar')
-
+<x-app-layout>
 <div class="relative overflow-hidden bg-[url('/Images/pexels-huseyn-kamaladdin-667838.jpg')] bg-center bg-cover">
   <div class="flex flex-col justify-center min-h-screen backdrop-blur-sm">
   <!--carousel start-->
-<div id="default-carousel" class="relative w-4/5 ml-36 pt-20 drop-shadow-2xl" data-carousel="slide">
+<div id="default-carousel" class="relative w-4/5 ml-36 pt-10 drop-shadow-2xl" data-carousel="slide">
   <!-- Carousel wrapper -->
   <div class="relative  h-56 overflow-hidden rounded-lg md:h-96">
        <!-- Item 1 -->
@@ -58,20 +38,24 @@
   <!--carousel end-->
 
   <!--card start-->
-  <div class="pt-20 pl-64">
-    <a href="/order" class="relative w-3/4 h-56 block w-sm bg-white border border-gray-200 rounded-lg drop-shadow-2xl hover:bg-gray-100 dark:bg-white dark:border-gray-800 dark:hover:bg-gray-800">
-      <h5 class=" text-center mt-6 ml-6 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Oil free </h5>
-      <p class="text-center mt-6 ml-6 text-xl font-bold tracking-tight text-gray-900 dark:text-black">oil free </p>
-      <p class="text-center mt-6 ml-6 text-l font-bold tracking-tight text-gray-900 dark:text-black">oil free anda dapat menukar minyak jelanta dengan point yg mana point tersebut dapat ditukar dengan pulsa</p>
-      <p class="text-center mt-6 ml-6 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Klik Disini Untuk Memesan</p> 
+  <div class="pt-10 pl-60">
+    <a href="" class="relative w-3/4 h-120 block w-sm bg-white border border-gray-200 rounded-lg drop-shadow-2xl hover:bg-gray-100 dark:bg-white dark:border-gray-800 dark:hover:bg-gray-800">
+      <h1 class="text-center mt-6 ml-5 text-xl font-bold tracking-tight text-gray-900 dark:text-black"> Apa saja yang kami kumpulkan?</h1> 
+      <p class="text-center mt-6 ml-15 text-xl font-bold tracking-tight text-gray-900 dark:text-black"> Kami mengumpulkan minyak jelantah atau biasa disebut Used Cooking Oil (UCO)<br> 
+                                yang merupakan minyak yang dihasilkan dari minyak goreng nabati seperti minyak 
+                                jagung,<br> minyak sayur, minyak samin, dan sebagai nya. Minyak jelantah ini adalah 
+                                minyak bekas<br> pemakaian rumah tangga maupun industri. Mengkonsumsi minyak jelantah 
+                                yang berkelanjutan <br> sangat berbahaya bagi kesehatan manusia, karena mengandung senyawa 
+                                yang bersifat arsinogenik <br> yang dapat memicu berbagai penyakit seperti kanker,hipertensi, 
+                                dan berbagai penyakit lain nya. <br> Dengan pengelolaan yang tepat, limbah jelantah ini dapat dikelola 
+                                menjadi energi alami <br> yang ramah lingkungan yaitu menjadi Bioenergi (Biodiesel).</p>
     </a>
-   
   </div>
   <!--card end-->
   </body>
 
   <!--Footer container-->
-<footer class="bg-sky-600 mt-2 text-center text-white">
+<footer class="bg-yellow-600 mt-5 text-center text-white">
   <div class="container px-6 pt-6">
     <div class="mb-6 flex justify-center">
   <a
@@ -125,13 +109,19 @@
     </div>
   </div>
 
-  <!--Copyright section-->
-  <div
-    class="p-4 text-center"
-    style="background-color: rgba(0, 0, 0, 0.2)">
-    © 2023 Copyright:
-    <a class="text-whitehite" href="https://tailwind-elements.com/"
-      >OilFree</a
-    >
-  </div>
-</footer>
+  <!--Copyright section-->           
+                <div class="bottom-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <div class="copyright-text">
+                                    <p>Copyright &copy; 2023 <span class="name">OilFree.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="scrolltop"><i class="uil uil-angle-up"></i></button>
+                    </div>
+                </div>
+            </footer>
+</x-app-layout>
