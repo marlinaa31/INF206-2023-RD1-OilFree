@@ -1,29 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.layoutUser')
+
+@section('content')
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Delivery</title>
-    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css" rel="stylesheet">
+    <!-- for icons  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="{{ url('assets/css/bootstrap.min.css') }}">
+    <!-- for swiper slider  -->
+    <link rel="stylesheet" href="{{ url('assets/css/swiper-bundle.min.css') }}">
 
-    <!-- file CSS SweetAlert -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  </head>
-
-  <body class="bg-warning">
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
-        <button type="button" class="btn btn-Kembali">Kembali</button>
-        <a class="navbar-brand" href="#">Delivery Man</a>
-        <p align="center"></p>
-      </div>
-    </nav>
-
+    <!-- fancy box  -->
+    <link rel="stylesheet" href="{{ url('assets/css/jquery.fancybox.min.css') }}">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="{{ url('css/style.css') }}">
+</head>
+<section class="two-col-sec section">
     <div class="container">
-      <div class="mt-3 mb-2">
+      <div class="mt-2 mb-2">
         <form>
-          <div class="row justify-content-center mt-5 mb-3">
+          <div class="row justify-content-center mt-3 mb-3">
             <label for="inputnama" class="col-2 col-form-label">Nama</label>
             <div class="col-4">
               <input
@@ -119,24 +115,57 @@
             </div>
           </div>
           <div class="d-flex justify-content-center gap-5">
-          <button type="button" class="btn btn-primary" id="pesanButton">Selesai</button>
-          <a href="{{ route('deskripsi_deliveryman') }}" class="btn btn-outline-primary">Batal</button>
+          <button type="button" class="btn btn-primary" id="pesanButton">Pesan</button>
+          <a href="{{ route('deskripsi_deliveryman') }}" class="btn btn-outline-primary">Batal</a>
           </div>
         </form>
         </div>
     </div>
+</section>
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
     <!-- file JavaScript SweetAlert -->
-      <script>
-        const pesanButton = document.querySelector('#pesanButton');
-        pesanButton.addEventListener('click', function() {
-          Swal.fire({
+    <script>
+    const pesanButton = document.querySelector('#pesanButton');
+    pesanButton.addEventListener('click', function(e) {
+       e.preventDefault(); // membatalkan aksi default tombol
+        Swal.fire({
             title: 'Tunggu sebentar',
-            text: 'Kami akan segera menemukan deliveryman untuk anda!',
-            icon: 'info',   
+            text: 'Kami akan segera menemukan deliveryman untuk anda:)',
+            icon: 'info',
+        }).then((result)=> {
+            if (result.isConfirmed) {
+                window.location.href = "{{ route('data_deliveryman') }}"; // mengganti route dan halaman tujuan
+            }
           });
-        });
-      </script>
-  </body>
-</html>
+      });
+    </script>
+        <!-- jquery  -->
+        <script src="{{ url('assets/js/jquery-3.5.1.min.js')}}"></script>
+    <!-- bootstrap -->
+    <script src="{{ url('assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url('assets/js/popper.min.js') }}"></script>
+
+    <!-- fontawesome  -->
+    <script src="{{ url('assets/js/font-awesome.min.js')}}"></script>
+
+    <!-- swiper slider  -->
+    <script src="{{ url ('assets/js/swiper-bundle.min.js') }}"></script>
+
+    <!-- mixitup -- filter  -->
+    <script src="{{ url('assets/js/jquery.mixitup.min.js') }}"></script>
+
+    <!-- fancy box  -->
+    <script src="{{ url('assets/js/jquery.fancybox.min.js') }}"></script>
+
+    <!-- parallax  -->
+    <script src="{{ url ('assets/js/parallax.min.js') }}"></script>
+
+    <!-- gsap  -->
+    <script src="{{ url ('assets/js/gsap.min.js')}}"></script>
+
+    <!-- custom js  -->
+    <script src="{{ url('main.js')}}"></script>
+
+@endsection
