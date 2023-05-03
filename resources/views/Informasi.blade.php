@@ -74,68 +74,6 @@
             </div>
         </div>
     </div>
-    <!-- card 3 -->
-    <div class="d-flex justify-content-center mb-2">
-        <div class="card mb-3" style=" max-width: 1350px;">
-            <div class="row g-0">
-                <div class="col-md-6">
-                    <img src="https://images.unsplash.com/photo-1630487378070-ec90568485b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1098&q=80"
-                        class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-6">
-                    <div class="card-body">
-                        <h5 class="card-title">Bahan bakar lampu</h5>
-                        <p class="card-text">
-
-                            Pembuatan bahan bakar lampu dari minyak jelantah melibatkan proses pengolahan minyak
-                            jelantah menjadi bahan bakar yang dapat digunakan sebagai pengganti minyak tanah pada lampu.
-                            Prosesnya meliputi pemisahan minyak dari limbah, pengolahan dengan bantuan bahan kimia, dan
-                            penyulingan hingga menjadi bahan bakar yang dapat digunakan pada lampu. Bahan bakar lampu
-                            yang dihasilkan dari minyak jelantah dapat membantu mengurangi ketergantungan pada bahan
-                            bakar fosil dan membantu mengurangi limbah yang mencemari lingkungan. Namun, sebelum
-                            digunakan, bahan bakar lampu dari minyak jelantah harus diuji dan dijamin aman bagi
-                            kesehatan manusia dan lingkungan.</p>
-                        <p class="card-text"><small class="text-body-secondary"></small></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- card 4 -->
-    <div class="d-flex justify-content-center mt-4 mb-2">
-        <div class="card mb-3" style=" max-width: 1350px;">
-            <div class="row g-0">
-
-                <div class="col-md-6">
-                    <div class="card-body">
-                        <h5 class="card-title">Biodiesel</h5>
-                        <p class="card-text">
-
-                            Biodiesel adalah bahan bakar yang ramah lingkungan yang diproduksi dari sumber daya nabati
-                            atau hewan, seperti minyak jelantah. Minyak jelantah dapat diambil dari minyak bekas yang
-                            digunakan untuk menggoreng makanan, yang kemudian dapat diolah menjadi biodiesel melalui
-                            proses transesterifikasi.
-
-                            Proses transesterifikasi melibatkan reaksi antara minyak jelantah dengan alkohol dan
-                            katalis, yang menghasilkan ester biodiesel dan gliserol. Setelah pemisahan ester biodiesel
-                            dan gliserol, biodiesel diuji untuk memastikan bahwa ia memenuhi standar kualitas yang
-                            ditetapkan, seperti kepadatan, viskositas, titik nyala, dan nilai kalor.
-
-                            Biodiesel yang dihasilkan dari minyak jelantah memiliki keunggulan dalam hal pengurangan
-                            emisi gas rumah kaca, karena dapat mengurangi emisi karbon dioksida hingga 78% dibandingkan
-                            dengan bahan bakar diesel konvensional. Selain itu, penggunaan biodiesel dari minyak
-                            jelantah juga dapat membantu mengurangi limbah yang mencemari lingkungan, karena dapat
-                            mengurangi jumlah minyak jelantah yang dibuang secara tidak benar.</p>
-                        <p class="card-text"><small class="text-body-secondary"></small></p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://media.istockphoto.com/id/1359509787/id/foto/percobaan-biodiesel-dari-bahan-baku-alami-di-laboratorium.jpg?s=612x612&w=0&k=20&c=RuoR1B8B-H0uNF6BI8ovTTKqf_PJJGVQSWUQYGuWKRw="
-                        class="img-fluid rounded-start " alt="...">
-                </div>
-            </div>
-        </div>
-    </div>
     </section>
 
     <!-- jquery  -->
