@@ -381,9 +381,3 @@
     <script src="{{ url('main.js')}}"></script>
     
     @endsection
-
-<<<<<<< HEAD
-    @endsection
-
-=======
->>>>>>> 97260a4a4b47cea09733b9c6269912df2934b646
