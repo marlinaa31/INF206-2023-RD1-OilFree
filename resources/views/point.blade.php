@@ -14,11 +14,17 @@
     <link rel="stylesheet" href="{{ url('assets/css/jquery.fancybox.min.css') }}">
     <!-- custom css  -->
     <link rel="stylesheet" href="{{ url('css/style.css') }}">
+
+    <style>
+        .card {
+            border-radius: 30px;
+            overflow: hidden;
+        }
+    </style>
 </head>
-<section class="two-col-sec section">
-    <div class="container my-5">
+    <div class="container my-4">
         <div class="row justify-content-center">
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Saldo Point</h5>
@@ -26,7 +32,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Saldo Pulsa</h5>
@@ -82,15 +88,14 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <div class="d-flex justify-content-end mt-5">
+                            <a href="{{ route('tukar-pulsa') }}"  class="btn btn-primary" id="pesanButton">Tukar Point</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-end mt-5">
-            <a href="{{ route('tukar-pulsa') }}"  class="btn btn-primary" id="pesanButton">Tukar Point</a>
-            </div>
     </div>
-    </section>
     
     <!-- jquery  -->
     <script src="{{ url('assets/js/jquery-3.5.1.min.js')}}"></script>
