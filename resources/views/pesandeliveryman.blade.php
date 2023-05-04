@@ -3,29 +3,6 @@
 @section('content')
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Delivery</title>
-    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css" rel="stylesheet">
-
-    <!-- file CSS SweetAlert -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  </head>
-
-  <body class="bg-warning">
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
-        <a href="{{ route('deskripsi_deliveryman') }}" class="btn btn-Kembali">Kembali</a>
-        <a class="navbar-brand" href="#">Delivery Man</a>
-        <p align="center"></p>
-      </div>
-    </nav>
-    @endsection
-
-    @section('content')
-    <div class="relative overflow-x-auto shadow-md sm:rounded-lg p-4 text-gray-700 border border-gray-200 bg-gray-50">
-=======
     <!-- for icons  -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- bootstrap  -->
@@ -39,65 +16,66 @@
     <link rel="stylesheet" href="{{ url('css/style.css') }}">
 </head>
 <section class="two-col-sec section">
->>>>>>> ba1b70d7f3e90145c4da27160ab7dc1c95564c6a
     <div class="container">
-      <div class="mt-2 mb-2">
+      <div class="mb-2">
         <form>
-          <div class="row justify-content-center mt-5 mb-3">
-            <label for="validationServer01" class="col-2 col-form-label">
+          <div class="row justify-content-center mb-3">
+            <label for="validationNama" class="col-2 col-form-label">
               Nama
             </label>
             <div class="col-4">
               <input
                 type="text"
                 class="form-control is-valid"
-                id="validationServer01"
+                id="validationNama"
                 placeholder="Masukkan Nama"
                 name="nama"
                 required>
-            <div class="valid-feedback">
-              Cek kembali Nama
+              <div class="valid-feedback">
+                Cek kembali nama
+              </div>            
             </div>
           </div>
           <div class="row justify-content-center mb-3">
-            <label for="validationServerNama" class="col-2 col-form-label">
-              No Hp
-            </label>
+          <label for="validationNoHp" class="col-2 col-form-label">
+            No Hp
+          </label>
             <div class="col-4">
               <input
                 type="text"
                 class="form-control is-valid"
-                id="validationServerNama"
-                placeholder="Masukkan No Hp"
-                name="nohp"
+                id="validationNoHp"
+                placeholder="Masukkan Nama"
+                name="nama"
                 required>
-            <div class="valid-feedback">
-              Cek kembali nomor Hp
+              <div class="valid-feedback">
+                Cek kembali No Hp
+              </div>
             </div>
           </div>
           <div class="row justify-content-center mb-3">
-            <label for="ValidationServerJumlah" class="col-2 col-form-label">
-              Berat Minyak (liter)
+            <label for="ValidationJumlah" class="col-2 col-form-label"
+              >Berat Minyak (liter)
             </label>
             <div class="col-4">
               <input
                 type="number"
-                class="form-control is-valid"
-                id="ValidationServerJumlah"
+                class="form-control"
+                id="jumlah"
                 placeholder="Masukkan Berat Minyak"
                 name="jumlah"
                 required>
-            <div class="valid-feedback">
-              Cek kembali Berat Minyak
-            </div>
+              <div class="valid-feedback">
+                Cek kembali berat minyak
+              </div>
               <div class="form-text">
                 Contoh: 10
               </div>
             </div>
           </div>
           <div class="row justify-content-center mb-3">
-            <label for="formFileMultiple" class="col-2 col-form-label">
-              Foto Minyak
+            <label for="formFileMultiple" class="col-2 col-form-label"
+              >Foto Minyak
               </label>
             <div class="col-4">
               <input
@@ -105,14 +83,15 @@
                 type="file"
                 id="formFileMultiple"
                 multiple
-              required>
+                required>
               <div class="valid-feedback">
                 Foto sudah tersimpan
             </div>
-            </div>
+          </div>
+        </div>
           <div class="row justify-content-center mb-3">
-            <label for="alamat" class="col-2 col-form-label">
-              Alamat
+          <label for="ValidationAlamat" class="col-2 col-form-label"
+              >Alamat
             </label>
             <div class="col-4">
               <input
@@ -121,17 +100,17 @@
                 id="alamat"
                 placeholder="Masukkan Alamat"
                 name="alamat"
-              required>
-              <div class="valid-feedback">
-                Cek kembali alamat
-              </div>
+                required>
               <div class="form-text">
                 Contoh: Jalan Raya No. 123, Banda Aceh
+              </div>
+              <div class="valid-feedback">
+                Cek kembali alamat
               </div>
             </div>
           </div>
           <div class="row justify-content-center mb-3">
-            <label for="tanggal" class="col-2 col-form-label">
+            <label for="ValidationTanggal" class="col-2 col-form-label">
               Tanggal
             </label>
             <div class="col-4">
@@ -140,30 +119,30 @@
                 class="form-control is-valid"
                 id="tanggal"
                 name="tanggal"
-              required>
+                required>
               <div class="valid-feedback">
                 Cek kembali tanggal
               </div>
             </div>
           </div>
           <div class="row justify-content-center mb-3">
-            <label for="waktu" class="col-2 col-form-label">
+            <label for="ValidationWaktu" class="col-2 col-form-label">
               Waktu
             </label>
             <div class="col-4">
               <input 
-                type="time" 
-                class="form-control is-valid" 
-                id="waktu" 
-                name="waktu" 
-                required>
-                <div class="valid-feedback">
-                  Cek kembali waktu
+              type="time" 
+              class="form-control is-valid" 
+              id="waktu" 
+              name="waktu"
+              required>
+              <div class="valid-feedback">
+                Cek kembali waktu
               </div>
             </div>
           </div>
           <div class="row justify-content-center mb-3">
-            <label for="keterangan" class="col-2 col-form-label">
+            <label for="Validationketerangan" class="col-2 col-form-label">
               Keterangan
             </label>
             <div class="col-4">
@@ -172,8 +151,8 @@
                 id="keterangan"
                 placeholder="Masukkan Keterangan"
                 name="keterangan"
-                rows="3"
-              ></textarea>
+                rows="3">
+              </textarea>
               <div class="valid-feedback">
                   Keterangan adalah opsional
               </div>
