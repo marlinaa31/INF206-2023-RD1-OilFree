@@ -14,11 +14,16 @@
     <link rel="stylesheet" href="{{ url('assets/css/jquery.fancybox.min.css') }}">
     <!-- custom css  -->
     <link rel="stylesheet" href="{{ url('css/style.css') }}">
+    <style>
+        .card {
+            border-radius: 40px;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <!-- <p class="align-items-center"></p> -->
-<section class="two-col-sec section">
-<div class="d-flex justify-content-center mt-3 mb-2">
-    <div class="card mb-4" style="max-width: 1200px;">
+<section class="d-flex justify-content-center">
+    <div class="card mb-4" style="max-width: 1350px;">
         <div class="row g-0">
             <div class="col-md-6">
                 <div class="card-body">
@@ -39,8 +44,7 @@
             </div>
         </div>
     </div>
-</div>
-</section>
+    </section>
 
     <!-- jquery  -->
     <script src="{{ url('assets/js/jquery-3.5.1.min.js')}}"></script>
