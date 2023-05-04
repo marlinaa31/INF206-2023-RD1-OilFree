@@ -16,6 +16,14 @@
         </p>
     </div>
 </nav>
+
+<div class="wrapper">
+	
+  <!-- Sidebar -->
+    @include('layouts.layoutdeliveryman')
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Content -->
 <div class="container">
 
 		<!-- Card untuk menampilkan pesanan -->

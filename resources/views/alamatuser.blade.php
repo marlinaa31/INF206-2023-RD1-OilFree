@@ -18,7 +18,14 @@
         <p align="center"></p>
       </div>
     </nav>
+    
 <div class="wrapper">
+
+  <!-- Sidebar -->
+    @include('layouts.layoutdeliveryman')
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Content -->
     <div class="title">
       Alamat user
     </div>

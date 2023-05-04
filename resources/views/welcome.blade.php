@@ -379,5 +379,5 @@
     <script src="{{ url('assets/js/smooth-scroll.js')}}"></script>
     <!-- custom js  -->
     <script src="{{ url('main.js')}}"></script>
-
+    
     @endsection
