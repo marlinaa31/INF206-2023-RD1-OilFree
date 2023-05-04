@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <x-app-layout>
 <div class="relative overflow-hidden bg-[url('/Images/pexels-huseyn-kamaladdin-667838.jpg')] bg-center bg-cover">
   <div class="flex flex-col justify-center min-h-screen backdrop-blur-sm">
@@ -254,4 +253,3 @@
                 </div>
             </footer>
 </x-app-layout>
->>>>>>> 9c14a614b2cac464db100b10f18d2f8acd95df90
