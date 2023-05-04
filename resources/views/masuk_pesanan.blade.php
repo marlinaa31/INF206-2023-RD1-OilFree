@@ -1,5 +1,7 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.layoutdeliveryman')
+
+@section('content')
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,11 +20,8 @@
 </nav>
 
 <div class="wrapper">
-	
-  <!-- Sidebar -->
-    @include('layouts.layoutdeliveryman')
-  <!-- /#sidebar-wrapper -->
-
+  
+@section('content')
   <!-- Content -->
 <div class="container">
 
@@ -96,4 +95,5 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 </body>
-</html>
+
+@endsection
