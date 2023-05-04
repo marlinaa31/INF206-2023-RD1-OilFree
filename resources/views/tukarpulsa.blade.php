@@ -14,16 +14,21 @@
     <link rel="stylesheet" href="{{ url('assets/css/jquery.fancybox.min.css') }}">
     <!-- custom css  -->
     <link rel="stylesheet" href="{{ url('css/style.css') }}">
+    <style>
+        .card {
+            border-radius: 20px;
+            overflow: hidden;
+        }
+    </style>
 </head>
-<section class="two-col-sec section">
-    <div class="container">
+    <section class="container">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="card shadow-lg border-0 rounded-lg">
                         <div class="card-body">
                             <form action="#" method="POST">
-                                <div class="form-floating mb-3">
+                                <div class="form-floating mb-2">
                                     <input class="form-control" id="no_hp" name="no_hp" type="tel" placeholder="Nomor HP"/>
                                     <label for="no_hp">Nomor HP</label>
                                 </div>
