@@ -1,25 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="{{url('css\profildelivery.css')}}">
+@extends('layouts.layoutdeliveryman')
 
-    <title>Profil</title>
-</head>
-<body class="bg-warning">
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
-        <a href="{{ route('dashboard_deliveryman') }}" class="btn btn-Kembali">Kembali</a>
-        <a class="navbar-brand" href="#">Profil Deliveryman</a>
-        <p align="center"></p>
-      </div>
-    </nav>
+@section('content')
 
     <div class="container rounded bg-white mt-5 mb-5">
         <div class="row">

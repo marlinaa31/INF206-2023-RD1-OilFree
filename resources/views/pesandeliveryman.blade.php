@@ -2,19 +2,6 @@
 
 @section('content')
 
-<head>
-    <!-- for icons  -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <!-- bootstrap  -->
-    <link rel="stylesheet" href="{{ url('assets/css/bootstrap.min.css') }}">
-    <!-- for swiper slider  -->
-    <link rel="stylesheet" href="{{ url('assets/css/swiper-bundle.min.css') }}">
-
-    <!-- fancy box  -->
-    <link rel="stylesheet" href="{{ url('assets/css/jquery.fancybox.min.css') }}">
-    <!-- custom css  -->
-    <link rel="stylesheet" href="{{ url('css/style.css') }}">
-</head>
 <section class="two-col-sec section">
     <div class="container">
       <div class="mb-2">
