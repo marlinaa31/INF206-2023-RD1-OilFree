@@ -14,10 +14,16 @@
     <link rel="stylesheet" href="{{ url('assets/css/jquery.fancybox.min.css') }}">
     <!-- custom css  -->
     <link rel="stylesheet" href="{{ url('css/style.css') }}">
+    <style>
+        .bg-white {
+            border-radius: 40px;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <section class="two-col-sec section">
     <div class="container ">
-        <div class="d-flex justify-content-center align-items-center mt-5 mb-2">
+        <div class="d-flex justify-content-center align-items-center mt-2 mb-2">
             <div class="row mb-3 mx-auto">
                 <!-- <div class="col-10"> -->
                 <div class="p-5 bg-white shadow-sm">
