@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\deliveryman_controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +35,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::middleware([checkRole::class . ':deliveryman'])->group(function(){
+        Route::get('/deliveryman', [deliveryman_controller::class, 'index'])->name('deliveryman');
+    });
 });
 
 Route::get('/deskripsideliveryman', function () {
@@ -51,10 +55,6 @@ Route::get('/Informasi', function () {
 Route::get('/alamatuser', function () {
     return view('alamatuser');
 })->name('alamat_user');
-
-Route::get('/dashboarddeliveryman', function () {
-    return view('dashboarddeliveryman');
-})->name('dashboard_deliveryman');
 
 Route::get('/masuk_pesanan', function () {
     return view('masuk_pesanan');
