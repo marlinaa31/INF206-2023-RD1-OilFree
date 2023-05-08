@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\OrderDeliveryman;
 use App\Http\Requests\StoreOrderDeliverymanRequest;
 use App\Http\Requests\UpdateOrderDeliverymanRequest;
-use App\Models\OrderDeliveryman;
 
 class OrderDeliverymanController extends Controller
 {
