@@ -39,23 +39,32 @@
                             <ul class="menu food-nav-menu">
                                 <li><a href="{{ route('welcome') }}">Beranda</a></li>
                                 <li><a href="{{ route('informasi') }}">Informasi</a></li>
-                                <li><a href="{{ route('deskripsi_deliveryman') }}">Delivery Man</a></li>
-                                <li><a href="{{ route('point') }}">Redeem Point</a></li>
-                                @if (auth()->user())
-                                <li>
-                                <form action="{{ url('/logout') }}" method="post">
-                                @csrf
-                                <button type="submit" class="button-logout">
-                                    <span class="button-icon"></span>
-                                <span class="button-text">Logout</span>
-                                </button>
-                                </form>
-                                </li>
-                                @else
 
-                                    <li><a href="{{ route('register') }}">Daftar</a></li>
+                                    @auth
+                                    @if (Auth::user()->role == 'user')
+                                    <li><a href="{{ route('deskripsi_deliveryman') }}">Delivery Man</a></li>
+                                    <li><a href="{{ route('point') }}">Redeem Point</a></li>
+
+                                    @endif
+
+                                    <li>
+                                    <form action="{{ url('/logout') }}" method="post">
+                                    @csrf
+                                    <button type="submit" class="button-logout">
+                                        <span class="button-icon"></span>
+                                    <span class="button-text">Logout</span>
+                                    </button>
+                                    </form>
+                                    </li>
+                                    @else
                                     <li><a href="{{ route('login') }}">Masuk</a></li>
-                                @endif
+                                    @if (Route::has('register'))
+                                    <li><a href="{{ route('register') }}">Daftar</a></li>
+                                    @endif
+                                    @endauth
+
+
+
                             </ul>
                         </nav>
                     </div>
