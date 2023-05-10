@@ -1,55 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Delivery</title>
-    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css" rel="stylesheet">
+@extends('layouts.layoutUser')
 
-    <!-- file CSS SweetAlert -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  </head>
+@section('content')
 
-  <body class="bg-warning">
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
-        <a href="{{ route('deskripsi_deliveryman') }}" class="btn btn-Kembali">Kembali</a>
-        <a class="navbar-brand" href="#">Delivery Man</a>
-        <p align="center"></p>
-      </div>
-    </nav>
-
+<section class="two-col-sec section">
     <div class="container">
-      <div class="mt-3 mb-2">
+      <div class="mb-2">
         <form>
-          <div class="row justify-content-center mt-5 mb-3">
-            <label for="inputnama" class="col-2 col-form-label">Nama</label>
+          <div class="row justify-content-center mb-3">
+            <label for="validationNama" class="col-2 col-form-label">
+              Nama
+            </label>
             <div class="col-4">
               <input
                 type="text"
-                class="form-control"
-                id="nama"
+                class="form-control is-valid"
+                id="validationNama"
                 placeholder="Masukkan Nama"
                 name="nama"
-              />
+                required>
+              <div class="valid-feedback">
+                Cek kembali nama
+              </div>            
             </div>
           </div>
           <div class="row justify-content-center mb-3">
-            <label for="inputnohp" class="col-2 col-form-label">No Hp</label>
+          <label for="validationNoHp" class="col-2 col-form-label">
+            No Hp
+          </label>
             <div class="col-4">
               <input
                 type="text"
-                class="form-control"
-                id="nohp"
-                placeholder="Masukkan No Hp"
-                name="nohp"
-              />
+                class="form-control is-valid"
+                id="validationNoHp"
+                placeholder="Masukkan Nama"
+                name="nama"
+                required>
+              <div class="valid-feedback">
+                Cek kembali No Hp
+              </div>
             </div>
           </div>
           <div class="row justify-content-center mb-3">
-            <label for="jumlah" class="col-2 col-form-label"
-              >Berat Minyak (liter)</label>
+            <label for="ValidationJumlah" class="col-2 col-form-label"
+              >Berat Minyak (liter)
+            </label>
             <div class="col-4">
               <input
                 type="number"
@@ -57,65 +51,98 @@
                 id="jumlah"
                 placeholder="Masukkan Berat Minyak"
                 name="jumlah"
-              />
-              <div class="form-text">Contoh: 5</div>
-            </div>
-          </div>
-          <div class="row justify-content-center mb-3">
-            <label for="formFileMultiple" class="col-2 col-form-label"
-              >Foto Minyak</label
-            >
-            <div class="col-4">
-              <input
-                class="form-control"
-                type="file"
-                id="formFileMultiple"
-                multiple
-              />
-            </div></div>
-          <div class="row justify-content-center mb-3">
-            <label for="alamat" class="col-2 col-form-label">Alamat</label>
-            <div class="col-4">
-              <input
-                type="text"
-                class="form-control"
-                id="alamat"
-                placeholder="Masukkan Alamat"
-                name="alamat"
-              />
+                required>
+              <div class="valid-feedback">
+                Cek kembali berat minyak
+              </div>
               <div class="form-text">
-                Contoh: Jalan Raya No. 123, Banda Aceh
+                Contoh: 10
               </div>
             </div>
           </div>
           <div class="row justify-content-center mb-3">
-            <label for="tanggal" class="col-2 col-form-label">Tanggal</label>
+            <label for="formFileMultiple" class="col-2 col-form-label"
+              >Foto Minyak
+              </label>
+            <div class="col-4">
+              <input
+                class="form-control is-valid"
+                type="file"
+                id="formFileMultiple"
+                multiple
+                required>
+              <div class="valid-feedback">
+                Foto sudah tersimpan
+            </div>
+          </div>
+        </div>
+          <div class="row justify-content-center mb-3">
+          <label for="ValidationAlamat" class="col-2 col-form-label"
+              >Alamat
+            </label>
+            <div class="col-4">
+              <input
+                type="text"
+                class="form-control is-valid"
+                id="alamat"
+                placeholder="Masukkan Alamat"
+                name="alamat"
+                required>
+              <div class="form-text">
+                Contoh: Jalan Raya No. 123, Banda Aceh
+              </div>
+              <div class="valid-feedback">
+                Cek kembali alamat
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mb-3">
+            <label for="ValidationTanggal" class="col-2 col-form-label">
+              Tanggal
+            </label>
             <div class="col-4">
               <input
                 type="date"
-                class="form-control"
+                class="form-control is-valid"
                 id="tanggal"
                 name="tanggal"
-              />
+                required>
+              <div class="valid-feedback">
+                Cek kembali tanggal
+              </div>
             </div>
           </div>
           <div class="row justify-content-center mb-3">
-            <label for="waktu" class="col-2 col-form-label">Waktu</label>
+            <label for="ValidationWaktu" class="col-2 col-form-label">
+              Waktu
+            </label>
             <div class="col-4">
-              <input type="time" class="form-control" id="waktu" name="waktu" />
+              <input 
+              type="time" 
+              class="form-control is-valid" 
+              id="waktu" 
+              name="waktu"
+              required>
+              <div class="valid-feedback">
+                Cek kembali waktu
+              </div>
             </div>
           </div>
           <div class="row justify-content-center mb-3">
-            <label for="keterangan" class="col-2 col-form-label"
-              >Keterangan</label>
+            <label for="Validationketerangan" class="col-2 col-form-label">
+              Keterangan
+            </label>
             <div class="col-4">
               <textarea
-                class="form-control"
+                class="form-control is-valid"
                 id="keterangan"
                 placeholder="Masukkan Keterangan"
                 name="keterangan"
-                rows="3"
-              ></textarea>
+                rows="3">
+              </textarea>
+              <div class="valid-feedback">
+                  Keterangan adalah opsional
+              </div>
             </div>
           </div>
           <div class="d-flex justify-content-center gap-5">
@@ -125,6 +152,7 @@
         </form>
         </div>
     </div>
+</section>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
@@ -144,5 +172,31 @@
           });
       });
     </script>
-  </body>
-</html>
+        <!-- jquery  -->
+        <script src="{{ url('assets/js/jquery-3.5.1.min.js')}}"></script>
+    <!-- bootstrap -->
+    <script src="{{ url('assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url('assets/js/popper.min.js') }}"></script>
+
+    <!-- fontawesome  -->
+    <script src="{{ url('assets/js/font-awesome.min.js')}}"></script>
+
+    <!-- swiper slider  -->
+    <script src="{{ url ('assets/js/swiper-bundle.min.js') }}"></script>
+
+    <!-- mixitup -- filter  -->
+    <script src="{{ url('assets/js/jquery.mixitup.min.js') }}"></script>
+
+    <!-- fancy box  -->
+    <script src="{{ url('assets/js/jquery.fancybox.min.js') }}"></script>
+
+    <!-- parallax  -->
+    <script src="{{ url ('assets/js/parallax.min.js') }}"></script>
+
+    <!-- gsap  -->
+    <script src="{{ url ('assets/js/gsap.min.js')}}"></script>
+
+    <!-- custom js  -->
+    <script src="{{ url('main.js')}}"></script>
+
+@endsection

@@ -1,49 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Alamat User</title>
-  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css" rel="stylesheet">
-  <!-- file CSS SweetAlert -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-	<link rel="stylesheet" href="{{url('css\alamatuser.css')}}"/>
-</head>
-<body class="bg-warning">
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
-        <a href="{{ route('masuk_pesanan') }}" class="btn btn-Kembali">Kembali</a>
-        <a class="navbar-brand" href="#">Oil Free</a>
-        <p align="center"></p>
-      </div>
-    </nav>
-<div class="wrapper">
-    <div class="title">
-      Alamat user
-    </div>
-    <div class="form">
-        <div class="inputfield">
-          <label>Username</label>
-          <input type="text" class="input">
-       </div>  
-       <div class="inputfield">
-        <label>Alamat</label>
-        <textarea class="textarea"></textarea>
-     </div>  
-      <div class="inputfield">
-          <label>Berat minyak</label>
-          <input type="text" class="input">
-       </div> 
-      <div class="inputfield">
-          <label>Foto minyak</label>
-          <textarea class="textarea"></textarea>
-       </div> 
-       <div class="d-flex justify-content-center mt-3 gap-5">
-      <button type="button" class="btn btn-dark" id="jemputButton">Jemput Sekarang</button>
-      </div>
-    </div>
-</div>	
+@extends('layouts.layoutdeliveryman')
+
+@section('content')
+  <head>
+	    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{{ url('assets1/css/bootstrap.min.css')}}">
+	    <!----css3---->
+        <link rel="stylesheet" href="{{ url('assets1/css/custom.css')}}">
+		<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+	
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+	    <!--google material icon-->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+        rel="stylesheet">
+  </head>
+  <body>
+        <!-- Page Content  -->
+        <div id="content">
+		
+		<div class="top-navbar">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="d-xl-block d-lg-block d-md-mone d-none">
+                        <span class="material-icons">arrow_back_ios</span>
+                    </button>
+					
+					<a class="navbar-brand" href="#"> Pesanan </a>
+					
+                    <button class="d-inline-block d-lg-none ml-auto more-button" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="material-icons">more_vert</span>
+                    </button>
+
+                    <div class="collapse navbar-collapse d-lg-block d-xl-block d-sm-none d-md-none d-none" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">   
+                            <li class="dropdown nav-item active">
+                                <a href="#" class="nav-link" data-toggle="dropdown">
+                                   <span class="material-icons">person</span>
+                               </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="{{ route('profil_delivery') }}">
+                                            <span class="material-icons">person_outline</span>Profile
+                                          </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('welcome') }}">
+                                            <span class="material-icons">logout</span>Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+	    </div>
+
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="card shadow-lg border-0 rounded-lg">
+                        <div class="card-body">
+                            <form action="#" method="POST">
+                            <div class="d-flex justify-content-center align-items-center mt-1 mb-2">
+                            <h4 class="mt-0">Alamat User</h4>
+                            </div>
+                                <div class="form-floating mb-2">
+                                    <label for="username" class="form-label">Username</label>
+                                    <input type="text" class="form-control" id="username" name="username">
+                                </div>
+                                <div class="form-floating mb-4">
+                                    <label for="username" class="form-label">Alamat</label>
+                                    <textarea class="form-control" id="alamat" name="alamat"></textarea>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <label for="username" class="form-label">Berat Minyak</label>
+                                    <input type="text" class="form-control" id="beratminyak" name="beratminyak">
+                                </div>
+                                <div class="form-floating mb-4">
+                                    <label for="username" class="form-label">Foto Minyak</label>
+                                    <textarea class="form-control" id="fotominyak" name="fotominyak"></textarea>
+                                </div>
+
+		<!-- Tombol "Selesai" di sudut kanan bawah -->
+		<div class="d-flex justify-content-end mt-5">
+            <button type="button" class="btn btn-dark" id="jemputButton">Jemput Sekarang</button>
+        </div>
+</div>
+	</div>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 <!-- file JavaScript SweetAlert -->
@@ -60,5 +107,27 @@ jemputButton.addEventListener('click', function(e) {
       });
   });
 </script>
-</body>
-</html>
+
+        
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="{{ url('assets1/js/jquery-3.3.1.slim.min.js') }}"></script>
+   <script src="{{ url('js/popper.min.js') }}"></script>
+   <script src="{{ url('js/bootstrap.min.js') }}"></script>
+   <script src="{{ url('js/jquery-3.3.1.min.js') }}"></script>
+  
+  
+  <script type="text/javascript">
+  $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+				$('#content').toggleClass('active');
+            });
+			
+			 $('.more-button,.body-overlay').on('click', function () {
+                $('#sidebar,.body-overlay').toggleClass('show-nav');
+            });
+			
+        });   
+</script>
+@endsection

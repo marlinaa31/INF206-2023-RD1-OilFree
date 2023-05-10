@@ -1,5 +1,4 @@
-<link rel="stylesheet" href="styles.css">
-</html><x-guest-layout>
+<x-guest-layout>
     <form method="POST" action="{{ route('register') }}">
         @csrf
 
@@ -45,6 +44,14 @@
                             name="password_confirmation" required autocomplete="new-password" />
 
             <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
+        </div>
+
+        <div class="mt-4">
+            <select name="role" id="role" class="mt-4 w-full border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm">
+                <option value="" selected disabled>Daftar Sebagai</option>
+                <option value="deliveryman">DeliveryMan</option>
+                <option value="user">Customer</option>
+            </select>
         </div>
 
         <div class="flex items-center justify-end mt-4">

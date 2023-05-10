@@ -1,15 +1,89 @@
-<div class="bg-white" id="sidebar-wrapper">
-    <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
-        <img src="{{ asset('path/ke/logo.png') }}" alt="logo" class="me-2">OilFree
-    </div>
-    <div class="list-group list-group-flush my-3">
-        <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active"><i
-                class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
-        <a href="{{ route('dashboard_deliveryman') }}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                class="fas fa-project-diagram me-2"></i>Riwayat</a>
-        <a href="{{ route('masuk_pesanan') }}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                class="fas fa-chart-line me-2"></i>Pesanan</a>
-        <a href="{{ route('welcome') }}" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
-                class="fas fa-power-off me-2"></i>Logout</a>
-    </div>
-</div>
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
+        <title>{{ config('app.name', 'Laravel') }}</title>
+
+         <!-- Bootstrap CSS -->
+         <link rel="stylesheet" href="{{ url('assets1/css/bootstrap.min.css')}}">
+	    <!----css3---->
+        <link rel="stylesheet" href="{{ url('assets1/css/custom.css')}}">
+		<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+	    <!--google material icon-->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+        rel="stylesheet">
+
+        @yield('script')
+
+    </head>
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3><img src="{{ url('assets1/img/logo.png') }}" class="img-fluid"/><span>Oil Free</span></h3>
+            </div>
+            <ul class="list-unstyled components">
+			<li  class="active">
+                    <a href="{{ route('dashboard_deliveryman') }}" class="dashboard"><i class="material-icons">dashboard</i><span>Dashboard</span></a>
+                </li>
+
+		      <div class="small-screen navbar-display">
+                <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
+                    <a href="#homeSubmenu0" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+					<i class="material-icons">person</i><span> user</span></a>
+                    <ul class="collapse list-unstyled menu" id="homeSubmenu0">
+                        <li>
+                            <a href="{{ route('profil_delivery') }}">
+                                <span class="material-icons">person_outline</span>Profile
+                              </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('welcome') }}">
+                                <span class="material-icons">logout</span>Logout</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="">
+                    <a href="{{ route('dashboard_deliveryman') }}"><i class="material-icons">date_range</i><span>Riwayat</span></a>
+                </li>
+
+               <li class="">
+                    <a href="{{ route('masuk_pesanan') }}"><i class="material-icons">border_color</i><span>Pesanan</span></a>
+                </li>
+
+
+                <form id="logout-form" action="{{ url('/logout') }}" method="POST">
+                    @csrf
+                    <li>
+                      <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        <i class="material-icons">exit_to_app</i> Logout
+                      </a>
+                    </li>
+                  </form>
+            </ul>
+        </nav>
+
+        @yield('content')
+
+        <!-- Footer  -->
+        <!-- End Footer  -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="{{ url('assets1/js/jquery-3.3.1.slim.min.js') }}"></script>
+   <script src="{{ url('js/popper.min.js') }}"></script>
+   <script src="{{ url('js/bootstrap.min.js') }}"></script>
+   <script src="{{ url('js/jquery-3.3.1.min.js') }}"></script>
+
+</body>
+</html>
