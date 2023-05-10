@@ -2,156 +2,77 @@
 
 @section('content')
 
-<section class="two-col-sec section">
-    <div class="container">
-      <div class="mb-2">
-        <form>
-          <div class="row justify-content-center mb-3">
-            <label for="validationNama" class="col-2 col-form-label">
-              Nama
-            </label>
-            <div class="col-4">
-              <input
-                type="text"
-                class="form-control is-valid"
-                id="validationNama"
-                placeholder="Masukkan Nama"
-                name="nama"
-                required>
-              <div class="valid-feedback">
-                Cek kembali nama
-              </div>            
-            </div>
-          </div>
-          <div class="row justify-content-center mb-3">
-          <label for="validationNoHp" class="col-2 col-form-label">
-            No Hp
-          </label>
-            <div class="col-4">
-              <input
-                type="text"
-                class="form-control is-valid"
-                id="validationNoHp"
-                placeholder="Masukkan Nama"
-                name="nama"
-                required>
-              <div class="valid-feedback">
-                Cek kembali No Hp
+<head>
+    <!-- for icons  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="{{ url('assets/css/bootstrap.min.css') }}">
+    <!-- for swiper slider  -->
+    <link rel="stylesheet" href="{{ url('assets/css/swiper-bundle.min.css') }}">
+
+    <!-- fancy box  -->
+    <link rel="stylesheet" href="{{ url('assets/css/jquery.fancybox.min.css') }}">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="{{ url('css/style.css') }}">
+    <style>
+        .card {
+            border-radius: 30px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<!-- Content -->
+<section class="container py-5">
+            <div class="row justify-content-center mb-2">
+                <div class="col-lg-8">
+                    <div class="card shadow-lg border-0 rounded-lg">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center align-items-center mt-1 mb-2">
+                            <h4 class="mt-2">Form Pemesanan Delivery Man</h4>
+                            </div>
+							<div class="p-4 bg-white shadow-sm">
+							<!-- Form untuk pemesanan -->
+              <form class="row g-3">
+              <div class="row">
+              <div class="col">
+              <label for="formGroupExampleInput" class="form-label">Nama</label>
+                  <input type="text" class="form-control" placeholder="Nama" aria-label="Nama">
               </div>
-            </div>
-          </div>
-          <div class="row justify-content-center mb-3">
-            <label for="ValidationJumlah" class="col-2 col-form-label"
-              >Berat Minyak (liter)
-            </label>
-            <div class="col-4">
-              <input
-                type="number"
-                class="form-control"
-                id="jumlah"
-                placeholder="Masukkan Berat Minyak"
-                name="jumlah"
-                required>
-              <div class="valid-feedback">
-                Cek kembali berat minyak
+              <div class="col">
+              <label for="formGroupExampleInput" class="form-label">No Handphone</label>
+                  <input type="text" class="form-control" placeholder="0823xxxxxxxx" aria-label="0823xxxxxxxx">
               </div>
-              <div class="form-text">
-                Contoh: 10
               </div>
-            </div>
-          </div>
-          <div class="row justify-content-center mb-3">
-            <label for="formFileMultiple" class="col-2 col-form-label"
-              >Foto Minyak
-              </label>
-            <div class="col-4">
-              <input
-                class="form-control is-valid"
-                type="file"
-                id="formFileMultiple"
-                multiple
-                required>
-              <div class="valid-feedback">
-                Foto sudah tersimpan
-            </div>
-          </div>
-        </div>
-          <div class="row justify-content-center mb-3">
-          <label for="ValidationAlamat" class="col-2 col-form-label"
-              >Alamat
-            </label>
-            <div class="col-4">
-              <input
-                type="text"
-                class="form-control is-valid"
-                id="alamat"
-                placeholder="Masukkan Alamat"
-                name="alamat"
-                required>
-              <div class="form-text">
-                Contoh: Jalan Raya No. 123, Banda Aceh
+              <div class="mt-4 mb-2">
+              <label for="formGroupExampleInput" class="form-label">Alamat</label>
+              <textarea class="form-control" id="formGroupExampleInput" placeholder="Alamat..."></textarea>
               </div>
-              <div class="valid-feedback">
-                Cek kembali alamat
+              <div class="row">
+              <div class="col mt-3">
+              <label for="formGroupExampleInput" class="form-label">Berat Minyak</label>
+                  <input type="number" class="form-control" placeholder="Berat Minyak" aria-label="Berat Minyak">
               </div>
-            </div>
-          </div>
-          <div class="row justify-content-center mb-3">
-            <label for="ValidationTanggal" class="col-2 col-form-label">
-              Tanggal
-            </label>
-            <div class="col-4">
-              <input
-                type="date"
-                class="form-control is-valid"
-                id="tanggal"
-                name="tanggal"
-                required>
-              <div class="valid-feedback">
-                Cek kembali tanggal
+              <div class="col mt-3">
+              <label for="formFileMultiple"" class="form-label">Foto Minyak</label>
+                  <input type="file" class="form-control" placeholder="Foto Minyak" aria-label="Foto Minyak">
               </div>
-            </div>
-          </div>
-          <div class="row justify-content-center mb-3">
-            <label for="ValidationWaktu" class="col-2 col-form-label">
-              Waktu
-            </label>
-            <div class="col-4">
-              <input 
-              type="time" 
-              class="form-control is-valid" 
-              id="waktu" 
-              name="waktu"
-              required>
-              <div class="valid-feedback">
-                Cek kembali waktu
               </div>
-            </div>
-          </div>
-          <div class="row justify-content-center mb-3">
-            <label for="Validationketerangan" class="col-2 col-form-label">
-              Keterangan
-            </label>
-            <div class="col-4">
-              <textarea
-                class="form-control is-valid"
-                id="keterangan"
-                placeholder="Masukkan Keterangan"
-                name="keterangan"
-                rows="3">
-              </textarea>
-              <div class="valid-feedback">
-                  Keterangan adalah opsional
+              <div class="row">
+              <div class="col mt-4 mb-2">
+              <label for="formGroupExampleInput" class="form-label">Tanggal</label>
+                  <input type="date" class="form-control" placeholder="" aria-label="Tanggal">
               </div>
-            </div>
-          </div>
-          <div class="d-flex justify-content-center gap-5">
+              <div class="col mt-4 mb-2">
+              <label for="formGroupExampleInput" class="form-label">Waktu</label>
+                  <input type="time" class="form-control" placeholder="" aria-label="Waktu">
+              </div>
+              </div>
+              <div class="d-flex justify-content-center gap-5 mt-4">
           <button type="button" class="btn btn-primary" id="pesanButton">Pesan</button>
           <a href="{{ route('deskripsi_deliveryman') }}" class="btn btn-outline-primary">Batal</a>
           </div>
-        </form>
-        </div>
-    </div>
+							</form>
 </section>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
