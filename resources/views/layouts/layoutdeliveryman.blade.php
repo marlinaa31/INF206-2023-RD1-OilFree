@@ -35,23 +35,9 @@
                     <a href="{{ route('dashboard_deliveryman') }}" class="dashboard"><i class="material-icons">dashboard</i><span>Dashboard</span></a>
                 </li>
 
-		      <div class="small-screen navbar-display">
-                <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
-                    <a href="#homeSubmenu0" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-					<i class="material-icons">person</i><span> user</span></a>
-                    <ul class="collapse list-unstyled menu" id="homeSubmenu0">
-                        <li>
-                            <a href="{{ route('profil_delivery') }}">
-                                <span class="material-icons">person_outline</span>Profile
-                              </a>
-                        </li>
-                        <li>
-                            <a href="{{ route('welcome') }}">
-                                <span class="material-icons">logout</span>Logout</a>
-                        </li>
-                    </ul>
+                <li class="">
+                    <a href="{{ route('profil_delivery') }}"><i class="material-icons">person_outline</i><span>Profile</span></a>
                 </li>
-
 
                 <li class="">
                     <a href="{{ route('dashboard_deliveryman') }}"><i class="material-icons">date_range</i><span>Riwayat</span></a>
