@@ -25,7 +25,7 @@ class AuthenticatedSessionController extends Controller
      */
     public function store(LoginRequest $request): RedirectResponse
     {
-        //Confirm email and password 
+        //Confirm email and password
         $validated = $request->validate($request->rules());
 
         //Login and session regenerate
@@ -35,8 +35,8 @@ class AuthenticatedSessionController extends Controller
         if(Auth::user()->role === 'deliveryman'){
             return redirect()->intended('/deliveryman');
         } else {
-            return redirect()->intended(RouteServiceProvider::HOME);
-        }    
+            return redirect()->intended('/dashboard');
+        }
     }
 
 
