@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\OrderDeliveryman;
 use App\Http\Requests\StoreOrderDeliverymanRequest;
 use App\Http\Requests\UpdateOrderDeliverymanRequest;
-use App\Models\OrderDeliveryman;
+use Illuminate\Http\Request;
+use \Carbon\Carbon;
+use Illuminate\Support\Facades\Auth;
 
 class OrderDeliverymanController extends Controller
 {
@@ -34,7 +36,6 @@ class OrderDeliverymanController extends Controller
             'alamat' => $request->alamat,
             'tanggal' => $request->tanggal,
             'waktu' => $request->waktu,
-            'keterangan' => $request->keterangan,
         ]);
     }
 
