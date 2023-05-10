@@ -1,8 +1,11 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\deliveryman_controller;
+use Illuminate\Support\Facades\Auth;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -28,7 +31,7 @@ Route::get('/register', function () {
 })->name('register');
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('welcome');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
@@ -79,5 +82,11 @@ Route::get('/point', function () {
 Route::get('/tukarpulsa', function () {
     return view('tukarpulsa');
 })->name('tukar-pulsa');
+
+Route::get('/dashboarddeliveryman', function () {
+    return view('dashboarddeliveryman');
+})->name('dashboard_deliveryman');
+
+
 
 require __DIR__.'/auth.php';
