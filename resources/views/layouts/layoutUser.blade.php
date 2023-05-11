@@ -22,6 +22,8 @@
 
 <body class="body-fixed">
     <!-- start of header  -->
+    @include('sweetalert::alert')
+
     <header class="site-header">
         <div class="container">
             <div class="row">
