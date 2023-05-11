@@ -1,6 +1,47 @@
 @extends('layouts.layoutdeliveryman')
 
 @section('content')
+  <head>
+	    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{{ url('assets1/css/bootstrap.min.css')}}">
+	    <!----css3---->
+        <link rel="stylesheet" href="{{ url('assets1/css/custom.css')}}">
+		<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+	    <!--google material icon-->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+        rel="stylesheet">
+  </head>
+  <body>
+        <!-- Page Content  -->
+        <section id="content">
+
+		<div class="top-navbar">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="d-xl-block d-lg-block d-md-mone d-none">
+                        <span class="material-icons">arrow_back_ios</span>
+                    </button>
+
+					<a class="navbar-brand" href="#"> Dashboard </a>
+
+                    <button class="d-inline-block d-lg-none ml-auto more-button" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="material-icons">more_vert</span>
+                    </button>
+
+                    <div class="collapse navbar-collapse d-lg-block d-xl-block d-sm-none d-md-none d-none" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+	    </div>
 
     <div class="container rounded bg-white mt-5 mb-5">
         <div class="row">
@@ -13,7 +54,7 @@
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <h4 class="text-right">Profile Settings</h4>
                         </div>
-                    <div class="row mt-2">
+                    <div class="row mt-3">
                         <div class="col-md-6"><label class="labels">Nama depan</label>
                         <input type="text" class="form-control" placeholder="nama depan" value="">
                     </div>
@@ -25,54 +66,30 @@
                         <div class="col-md-12"><label class="labels">Jenis Kelamin</label>
                         <input type="text" class="form-control" placeholder="Jenis Kelamin" value="">
                     </div>
-                        <div class="col-md-12"><label class="labels">Email</label>
+                        <div class="mt-3 col-md-12"><label class="labels">Email</label>
                         <input type="text" class="form-control" placeholder="Email" value="">
                     </div>
-                        <div class="col-md-12"><label class="labels">No Hp</label>
+                        <div class="mt-3 col-md-12"><label class="labels">No Hp</label>
                         <input type="text" class="form-control" placeholder="No Hp" value="">
                     </div>
-                        <div class="col-md-12"><label class="labels">Alamat</label>
+                        <div class="mt-3 col-md-12"><label class="labels">Alamat</label>
                         <input type="text" class="form-control" placeholder="Alamat" value="">
                     </div>
-                        <div class="col-md-12"><label class="labels">Jenis Kendaraan</label>
+                        <div class="mt-3 col-md-12"><label class="labels">Jenis Kendaraan</label>
                         <input type="text" class="form-control" placeholder="Jenis Kendaraan" value="">
                     </div>
-                        <div class="col-md-12"><label class="labels">Plat Kendaraan</label>
+                        <div class="mt-3 col-md-12"><label class="labels">Plat Kendaraan</label>
                         <input type="text" class="form-control" placeholder="Plat Kendaraan" value="">
                     </div>
-                        <div class="col-md-12"><label class="labels">Upload Foto Diri</label>
-                        <input type="text" class="form-control" placeholder="Upload Foto Diri" value="">
+                        <div class="mt-3 col-md-12"><label class="labels">Upload Foto Diri</label>
+                        <input type="file" class="form-control" placeholder="Upload Foto Diri" value="">
                     </div>
-                        <div class="col-md-12"><label class="labels">Upload Foto KTP</label>
-                        <input type="text" class="form-control" placeholder="education" value="">
+                        <div class="mt-3 col-md-12"><label class="labels">Upload Foto KTP</label>
+                        <input type="fie" class="form-control" placeholder="education" value="">
                     </div>
                 </div>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <label class="labels">Country</label>
-                            <input type="text" class="form-control" placeholder="country" value="">
-                        </div>
-                        <div class="col-md-6">
-                            <label class="labels">State/Region</label>
-                            <input type="text" class="form-control" value="" placeholder="state">
-                        </div>
-                    </div>
                     <div class="mt-5 text-center">
-                        <button type="button" class="btn btn-primary profile-button">Save Profile</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="p-3 py-5">
-                    <div class="d-flex justify-content-between align-items-center experience">
-                        <span>Edit Experience</span>
-                        <span class="border px-3 p-1 add-experience">
-                            <i class="fa fa-plus"></i>&nbsp;Experience</span></div><br>
-                    <div class="col-md-12"><label class="labels">Experience in Designing</label>
-                        <input type="text" class="form-control" placeholder="experience" value="">
-                    </div> <br>
-                    <div class="col-md-12"><label class="labels">Additional Details</label>
-                        <input type="text" class="form-control" placeholder="additional details" value="">
+                        <button type="button" class="btn btn-dark profile-button">Save Profile</button>
                     </div>
                 </div>
             </div>
@@ -83,5 +100,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
-</body>
-</html>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{{ url('assets1/js/jquery-3.3.1.slim.min.js') }}"></script>
+   <script src="{{ url('js/popper.min.js') }}"></script>
+   <script src="{{ url('js/bootstrap.min.js') }}"></script>
+   <script src="{{ url('js/jquery-3.3.1.min.js') }}"></script>
+
+
+  <script type="text/javascript">
+  $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+				$('#content').toggleClass('active');
+            });
+
+			 $('.more-button,.body-overlay').on('click', function () {
+                $('#sidebar,.body-overlay').toggleClass('show-nav');
+            });
+
+        });
+</script>
+@endsection

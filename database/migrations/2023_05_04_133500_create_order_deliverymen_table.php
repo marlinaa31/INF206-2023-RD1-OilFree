@@ -21,7 +21,6 @@ return new class extends Migration
             $table->string('alamat');
             $table->date('tanggal');
             $table->time('waktu');
-            $table->string('keterangan')->nullable();
         });
     }
 

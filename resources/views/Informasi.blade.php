@@ -318,4 +318,5 @@
 
     <script src="{{ url('main.js')}}"></script>
 
+
 @endsection

@@ -17,7 +17,5 @@ class OrderDeliveryman extends Model
         'alamat',
         'tanggal',
         'waktu',
-        'keterangan',
-
     ];
 }
