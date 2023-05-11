@@ -33,43 +33,44 @@
                             </div>
 							<div class="p-4 bg-white shadow-sm">
 							<!-- Form untuk pemesanan -->
-              <form class="row g-3">
+              <form action="{{ route('pesan.store') }}" method="POST" class="row g-3">
+                @csrf
               <div class="row">
               <div class="col">
-              <label for="formGroupExampleInput" class="form-label">Nama</label>
-                  <input type="text" class="form-control" placeholder="Nama" aria-label="Nama">
+              <label for="name" class="form-label">Nama</label>
+                  <input type="text" id="nama" name="nama" class="form-control" placeholder="Nama" aria-label="Nama">
               </div>
               <div class="col">
-              <label for="formGroupExampleInput" class="form-label">No Handphone</label>
-                  <input type="text" class="form-control" placeholder="0823xxxxxxxx" aria-label="0823xxxxxxxx">
+              <label for="nohp" class="form-label">No Handphone</label>
+                  <input type="text" id="nohp" name="nohp" class="form-control" placeholder="0823xxxxxxxx" aria-label="0823xxxxxxxx">
               </div>
               </div>
               <div class="mt-4 mb-2">
-              <label for="formGroupExampleInput" class="form-label">Alamat</label>
-              <textarea class="form-control" id="formGroupExampleInput" placeholder="Alamat..."></textarea>
+              <label for="alamat" class="form-label">Alamat</label>
+              <textarea class="form-control" id="alamat" name="alamat" placeholder="Alamat..."></textarea>
               </div>
               <div class="row">
               <div class="col mt-3">
-              <label for="formGroupExampleInput" class="form-label">Berat Minyak</label>
-                  <input type="number" class="form-control" placeholder="Berat Minyak" aria-label="Berat Minyak">
+              <label for="berat_minyak" class="form-label">Berat Minyak</label>
+                  <input type="number" id="berat_minyak" name="berat_minyak" class="form-control" placeholder="Berat Minyak" aria-label="Berat Minyak">
               </div>
               <div class="col mt-3">
-              <label for="formFileMultiple"" class="form-label">Foto Minyak</label>
-                  <input type="file" class="form-control" placeholder="Foto Minyak" aria-label="Foto Minyak">
+              <label for="foto_minyak"" class="form-label">Foto Minyak</label>
+                  <input type="file" id="foto_minyak" name="foto_minyak" class="form-control" placeholder="Foto Minyak" aria-label="Foto Minyak">
               </div>
               </div>
               <div class="row">
               <div class="col mt-4 mb-2">
-              <label for="formGroupExampleInput" class="form-label">Tanggal</label>
-                  <input type="date" class="form-control" placeholder="" aria-label="Tanggal">
+              <label for="tanggal" class="form-label">Tanggal</label>
+                  <input type="date" id="tanggal" name="tanggal" class="form-control" placeholder="" aria-label="Tanggal">
               </div>
               <div class="col mt-4 mb-2">
-              <label for="formGroupExampleInput" class="form-label">Waktu</label>
-                  <input type="time" class="form-control" placeholder="" aria-label="Waktu">
+              <label for="waktu" class="form-label">Waktu</label>
+                  <input type="time" id="waktu" name="waktu" class="form-control" placeholder="" aria-label="Waktu">
               </div>
               </div>
               <div class="d-flex justify-content-center gap-5 mt-4">
-          <button type="button" class="btn btn-primary" id="pesanButton">Pesan</button>
+          <button type="submit" class="btn btn-primary">Pesan</button>
           <a href="{{ route('deskripsi_deliveryman') }}" class="btn btn-outline-primary">Batal</a>
           </div>
 							</form>
