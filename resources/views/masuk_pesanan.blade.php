@@ -40,20 +40,6 @@
                         <div class="collapse navbar-collapse d-lg-block d-xl-block d-sm-none d-md-none d-none"
                             id="navbarSupportedContent">
                             <ul class="nav navbar-nav ml-auto">
-                                <li class="dropdown nav-item active">
-                                    <a href="#" class="nav-link" data-toggle="dropdown">
-                                        <span class="material-icons">person</span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="{{ route('profil_delivery') }}">
-                                                <span class="material-icons">person_outline</span>Profile
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="{{ route('welcome') }}">
-                                                <span class="material-icons">logout</span>Logout</a>
-                                        </li>
                                     </ul>
                                 </li>
                             </ul>
