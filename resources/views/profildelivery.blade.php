@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="{{ url('assets1/css/bootstrap.min.css')}}">
 	    <!----css3---->
         <link rel="stylesheet" href="{{ url('assets1/css/custom.css')}}">
+        <link rel="stylesheet" href="{{ url('assets1/css/profildelivery.css')}}">
 		<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
 
 	    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -85,7 +86,7 @@
                         <input type="file" class="form-control" placeholder="Upload Foto Diri" value="">
                     </div>
                         <div class="mt-3 col-md-12"><label class="labels">Upload Foto KTP</label>
-                        <input type="fie" class="form-control" placeholder="education" value="">
+                        <input type="file" class="form-control" placeholder="Upload Foto KTP" value="">
                     </div>
                 </div>
                     <div class="mt-5 text-center">
