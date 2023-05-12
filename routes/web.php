@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\BeripointController;
+use App\Http\Controllers\TukarpointController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\deliveryman_controller;
 use App\Http\Controllers\PemesananController;
